@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="610" viewBox="0 0 1600 610" role="img" aria-labelledby="title desc">
+  <title id="title">From individual agentic coding to organisational agentic capability</title>
+  <desc id="desc">A diagram showing solo agent productivity, the organisational scaling cliff, the software factory as a shared harness, and organisational capability.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M2,2 L10,6 L2,10" fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .bg { fill: #fffdf8; }
+      .title { font: 700 38px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2937; }
+      .subtitle { font: 400 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4b5563; }
+      .label { font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1f2937; }
+      .body { font: 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #374151; }
+      .small { font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #374151; }
+      .tiny { font: 500 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #4b5563; }
+      .panel { stroke-width: 3; stroke-dasharray: 10 8; rx: 22; }
+      .card { stroke-width: 3; rx: 18; fill: #fff; }
+      .arrow { fill: none; stroke: #1f2937; stroke-width: 4; stroke-linecap: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="610"/>
+
+  <text class="title" x="56" y="72">From individual leverage to organisational capability</text>
+  <text class="subtitle" x="58" y="112">The software factory is the system that lets agentic coding scale beyond one strong operator.</text>
+
+  <rect class="panel" x="55" y="160" width="295" height="390" fill="#e7f5ff" stroke="#1c7ed6"/>
+  <text class="label" x="84" y="208">Solo expert</text>
+  <text class="body" x="84" y="242">Claude/Codex already creates</text>
+  <text class="body" x="84" y="266">real local speed.</text>
+  <rect class="card" x="85" y="310" width="235" height="72" stroke="#1c7ed6"/>
+  <text class="small" x="110" y="340">High local speed</text>
+  <text class="tiny" x="110" y="365">Fast edits, fewer handoffs</text>
+  <rect class="card" x="85" y="402" width="235" height="94" stroke="#1c7ed6"/>
+  <text class="small" x="110" y="432">Hidden dependency</text>
+  <text class="tiny" x="110" y="457">Taste, prompts, local scripts,</text>
+  <text class="tiny" x="110" y="478">review judgement</text>
+
+  <path class="arrow" d="M360 355 C395 355, 410 355, 445 355"/>
+
+  <rect class="panel" x="455" y="160" width="335" height="390" fill="#fff5f5" stroke="#e03131"/>
+  <text class="label" x="484" y="208">The scaling cliff</text>
+  <text class="body" x="484" y="242">At organisational scale, speed</text>
+  <text class="body" x="484" y="266">meets constraints.</text>
+  <path d="M622 292 L762 365 L622 438 L482 365 Z" fill="#ffe3e3" stroke="#e03131" stroke-width="3" stroke-linejoin="round"/>
+  <text class="small" x="622" y="347" text-anchor="middle">Local speed</text>
+  <text class="small" x="622" y="371" text-anchor="middle">becomes</text>
+  <text class="small" x="622" y="395" text-anchor="middle">org risk</text>
+  <g>
+    <rect class="card" x="492" y="450" width="120" height="42" stroke="#fa5252"/>
+    <text class="tiny" x="519" y="477">Security</text>
+    <rect class="card" x="625" y="450" width="135" height="42" stroke="#fa5252"/>
+    <text class="tiny" x="653" y="477">Review load</text>
+    <rect class="card" x="492" y="500" width="130" height="42" stroke="#fa5252"/>
+    <text class="tiny" x="520" y="527">Compliance</text>
+    <rect class="card" x="635" y="500" width="125" height="42" stroke="#fa5252"/>
+    <text class="tiny" x="667" y="527">Cost</text>
+  </g>
+
+  <path class="arrow" d="M800 355 C835 355, 850 355, 885 355"/>
+
+  <rect class="panel" x="895" y="160" width="320" height="390" fill="#ebfbee" stroke="#2b8a3e"/>
+  <text class="label" x="924" y="208">Software factory</text>
+  <text class="body" x="924" y="242">A shared harness around</text>
+  <text class="body" x="924" y="266">the models.</text>
+  <rect class="card" x="925" y="308" width="260" height="68" stroke="#2b8a3e" fill="#fff"/>
+  <text class="small" x="950" y="337">Environment</text>
+  <text class="tiny" x="950" y="360">devcontainers, permissions</text>
+  <rect class="card" x="925" y="393" width="260" height="68" stroke="#2b8a3e" fill="#fff"/>
+  <text class="small" x="950" y="422">Workflow</text>
+  <text class="tiny" x="950" y="445">small slices, review, QA</text>
+  <rect class="card" x="925" y="478" width="260" height="68" stroke="#2b8a3e" fill="#fff"/>
+  <text class="small" x="950" y="507">Learning loop</text>
+  <text class="tiny" x="950" y="530">rules, hooks, ADRs, evals</text>
+
+  <path class="arrow" d="M1225 355 C1255 355, 1265 355, 1295 355"/>
+
+  <rect class="panel" x="1305" y="160" width="245" height="390" fill="#e6fcf5" stroke="#087f5b"/>
+  <text class="label" x="1428" y="208" text-anchor="middle">Org capability</text>
+  <text class="body" x="1428" y="242" text-anchor="middle">Speed becomes repeatable,</text>
+  <text class="body" x="1428" y="266" text-anchor="middle">reviewable, and safer.</text>
+  <rect class="card" x="1330" y="314" width="195" height="62" stroke="#099268"/>
+  <text class="small" x="1352" y="350">Bounded autonomy</text>
+  <rect class="card" x="1330" y="396" width="195" height="62" stroke="#099268"/>
+  <text class="small" x="1352" y="432">Repeatable flow</text>
+  <rect class="card" x="1330" y="478" width="195" height="62" stroke="#099268"/>
+  <text class="small" x="1352" y="514">Shared memory</text>
+</svg>
