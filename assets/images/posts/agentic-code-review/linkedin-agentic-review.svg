@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic verification and human production stewardship</title>
+  <desc id="desc">Editorial LinkedIn image showing pull request review bottlenecks, agentic verification evidence, and human rollout stewardship.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071012"/>
+      <stop offset="0.45" stop-color="#102024"/>
+      <stop offset="1" stop-color="#171612"/>
+    </linearGradient>
+    <linearGradient id="tealLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2c6d66"/>
+      <stop offset="0.52" stop-color="#90e6d5"/>
+      <stop offset="1" stop-color="#f1ba69"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5fff9" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#d8fff4" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="evidence" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3d2"/>
+      <stop offset="1" stop-color="#d8fff4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.56 0 0 0 0 0.9 0 0 0 0 0.82 0 0 0 0.45 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000000" flood-opacity="0.26"/>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#d8fff4" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .micro { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+      .label { font-size: 18px; font-weight: 700; }
+      .small { font-size: 15px; font-weight: 650; }
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .glass { fill: url(#panel); stroke: #cffff4; stroke-opacity: 0.20; }
+      .muted { fill: #a7bfba; }
+      .cream { fill: #fff2d0; }
+      .teal { fill: #8ee6d7; }
+      .amber { fill: #f1ba69; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="627" fill="url(#bg)"/>
+  <rect width="1200" height="627" fill="url(#grid)"/>
+  <circle cx="938" cy="270" r="230" fill="#f1ba69" opacity="0.07"/>
+  <circle cx="475" cy="315" r="260" fill="#8ee6d7" opacity="0.06"/>
+
+  <g class="sans">
+    <text x="72" y="76" class="micro muted">Agentic engineering</text>
+    <text x="72" y="130" font-size="48" font-weight="830" fill="#f8fff8">Code review isn't dead.</text>
+    <text x="72" y="184" font-size="48" font-weight="830" fill="#f8fff8">The pull request might be.</text>
+    <text x="76" y="224" font-size="19" font-weight="560" fill="#b8ccc7">From review bottlenecks to evidence-driven verification.</text>
+    <text x="76" y="253" font-size="19" font-weight="560" fill="#b8ccc7">With humans still accountable for production change.</text>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M118 384 C256 332 337 413 450 362 C574 306 650 329 760 370 C868 410 964 345 1078 286" class="line" stroke="url(#tealLine)" stroke-width="8"/>
+    <path d="M118 384 C256 332 337 413 450 362 C574 306 650 329 760 370 C868 410 964 345 1078 286" class="line" stroke="#eafff8" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(70 282)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="302" height="252" rx="24" class="glass"/>
+    <text x="24" y="38" class="sans label cream">PR review bottleneck</text>
+    <g transform="translate(28 62)">
+      <rect x="0" y="28" width="206" height="96" rx="13" fill="#0f2023" stroke="#cffff4" stroke-opacity="0.18"/>
+      <rect x="18" y="47" width="90" height="8" rx="4" fill="#8ee6d7" opacity="0.65"/>
+      <rect x="18" y="70" width="154" height="7" rx="3.5" fill="#effff8" opacity="0.18"/>
+      <rect x="18" y="90" width="130" height="7" rx="3.5" fill="#effff8" opacity="0.14"/>
+      <rect x="178" y="20" width="76" height="45" rx="12" fill="#fff2d0" opacity="0.14" stroke="#fff2d0" stroke-opacity="0.28"/>
+      <circle cx="196" cy="43" r="5" fill="#f1ba69"/>
+      <rect x="209" y="38" width="28" height="8" rx="4" fill="#fff2d0" opacity="0.36"/>
+      <rect x="42" y="0" width="204" height="96" rx="13" fill="#12282a" stroke="#cffff4" stroke-opacity="0.16"/>
+      <rect x="60" y="19" width="86" height="8" rx="4" fill="#8ee6d7" opacity="0.75"/>
+      <rect x="60" y="43" width="150" height="7" rx="3.5" fill="#effff8" opacity="0.20"/>
+      <rect x="60" y="64" width="118" height="7" rx="3.5" fill="#effff8" opacity="0.14"/>
+      <rect x="168" y="79" width="76" height="45" rx="12" fill="#fff2d0" opacity="0.13" stroke="#fff2d0" stroke-opacity="0.24"/>
+      <circle cx="188" cy="101" r="5" fill="#f1ba69"/>
+      <rect x="202" y="96" width="25" height="8" rx="4" fill="#fff2d0" opacity="0.34"/>
+      <g opacity="0.9">
+        <path d="M246 40 C268 76 270 115 251 154" class="line" stroke="#f1ba69" stroke-width="4"/>
+        <path d="M251 154 L239 141 M251 154 L266 146" class="line" stroke="#f1ba69" stroke-width="4"/>
+      </g>
+    </g>
+    <rect x="24" y="205" width="114" height="24" rx="12" fill="#f1ba69" opacity="0.16"/>
+    <rect x="150" y="205" width="90" height="24" rx="12" fill="#8ee6d7" opacity="0.13"/>
+  </g>
+
+  <g transform="translate(414 250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="354" height="318" rx="28" class="glass"/>
+    <text x="27" y="42" class="sans label cream">Agentic verification</text>
+    <g transform="translate(34 70)">
+      <g transform="translate(93 0)">
+        <path d="M60 0 L112 30 L112 90 L60 120 L8 90 L8 30 Z" fill="#102629" stroke="#8ee6d7" stroke-opacity="0.68" stroke-width="2"/>
+        <path d="M60 18 L94 38 L94 78 L60 98 L26 78 L26 38 Z" fill="#8ee6d7" opacity="0.11"/>
+        <circle cx="60" cy="60" r="22" fill="#8ee6d7" opacity="0.26"/>
+        <path d="M46 59 L57 70 L76 47" class="line" stroke="#fff2d0" stroke-width="6"/>
+      </g>
+
+      <g transform="translate(0 148)">
+        <rect x="0" y="0" width="84" height="80" rx="14" fill="url(#evidence)" opacity="0.92"/>
+        <path d="M18 24 L33 39 L62 18" class="line" stroke="#1f6f63" stroke-width="6"/>
+        <rect x="18" y="56" width="48" height="6" rx="3" fill="#183134" opacity="0.30"/>
+      </g>
+      <g transform="translate(101 137)">
+        <rect x="0" y="0" width="84" height="91" rx="14" fill="url(#evidence)" opacity="0.84"/>
+        <rect x="18" y="20" width="48" height="8" rx="4" fill="#1f6f63" opacity="0.45"/>
+        <rect x="18" y="42" width="34" height="8" rx="4" fill="#183134" opacity="0.22"/>
+        <rect x="18" y="64" width="52" height="8" rx="4" fill="#183134" opacity="0.18"/>
+      </g>
+      <g transform="translate(202 148)">
+        <rect x="0" y="0" width="84" height="80" rx="14" fill="url(#evidence)" opacity="0.9"/>
+        <rect x="17" y="18" width="50" height="32" rx="6" fill="#173236" opacity="0.34"/>
+        <path d="M26 37 L38 27 L51 43 L58 34 L67 49 L18 49 Z" fill="#8ee6d7" opacity="0.8"/>
+        <circle cx="55" cy="28" r="5" fill="#f1ba69"/>
+      </g>
+
+      <path d="M153 121 L42 148 M162 121 L143 137 M171 121 L244 148" class="line" stroke="#8ee6d7" stroke-opacity="0.55" stroke-width="3"/>
+    </g>
+    <g transform="translate(32 269)">
+      <rect x="0" y="0" width="72" height="10" rx="5" fill="#8ee6d7" opacity="0.68"/>
+      <rect x="88" y="0" width="72" height="10" rx="5" fill="#fff2d0" opacity="0.46"/>
+      <rect x="176" y="0" width="72" height="10" rx="5" fill="#f1ba69" opacity="0.58"/>
+      <rect x="264" y="0" width="34" height="10" rx="5" fill="#eafff8" opacity="0.24"/>
+    </g>
+  </g>
+
+  <g transform="translate(810 236)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="318" height="342" rx="28" class="glass"/>
+    <text x="26" y="44" class="sans label cream">Production stewardship</text>
+
+    <g transform="translate(24 74)">
+      <rect x="0" y="0" width="270" height="116" rx="18" fill="#0f2023" stroke="#cffff4" stroke-opacity="0.18"/>
+      <path d="M20 77 C46 42 70 54 93 64 C118 76 139 42 160 51 C184 61 195 88 224 47 C234 33 244 30 252 29" class="line" stroke="#8ee6d7" stroke-width="4"/>
+      <path d="M20 91 L252 91" class="line" stroke="#fff2d0" stroke-opacity="0.22" stroke-width="2"/>
+      <path d="M20 58 L252 58" class="line" stroke="#fff2d0" stroke-opacity="0.14" stroke-width="2"/>
+      <circle cx="225" cy="47" r="7" fill="#f1ba69"/>
+      <rect x="20" y="20" width="82" height="8" rx="4" fill="#8ee6d7" opacity="0.55"/>
+    </g>
+
+    <g transform="translate(24 214)">
+      <rect x="0" y="0" width="128" height="78" rx="18" fill="#fff2d0" opacity="0.12" stroke="#fff2d0" stroke-opacity="0.22"/>
+      <rect x="18" y="20" width="60" height="16" rx="8" fill="#102629"/>
+      <circle cx="62" cy="28" r="12" fill="#8ee6d7"/>
+      <rect x="18" y="51" width="88" height="8" rx="4" fill="#fff2d0" opacity="0.33"/>
+    </g>
+    <g transform="translate(166 214)">
+      <rect x="0" y="0" width="128" height="78" rx="18" fill="#f1ba69" opacity="0.14" stroke="#f1ba69" stroke-opacity="0.28"/>
+      <rect x="18" y="20" width="60" height="16" rx="8" fill="#102629"/>
+      <circle cx="34" cy="28" r="12" fill="#f1ba69"/>
+      <rect x="18" y="51" width="88" height="8" rx="4" fill="#fff2d0" opacity="0.33"/>
+    </g>
+
+    <g transform="translate(111 132)">
+      <circle cx="48" cy="33" r="24" fill="#fff2d0"/>
+      <path d="M18 112 C20 75 75 75 78 112 Z" fill="#173236" stroke="#8ee6d7" stroke-opacity="0.35"/>
+      <path d="M18 112 C36 92 60 92 78 112" class="line" stroke="#f1ba69" stroke-width="4"/>
+    </g>
+  </g>
+
+  <g class="sans" transform="translate(78 604)">
+    <rect x="0" y="-26" width="1044" height="1" fill="#eafff8" opacity="0.16"/>
+    <text x="0" y="0" font-size="16" font-weight="650" fill="#8ee6d7">evidence</text>
+    <text x="93" y="0" font-size="16" font-weight="650" fill="#f8fff8" opacity="0.70">over ceremony</text>
+    <circle cx="235" cy="-5" r="4" fill="#f1ba69"/>
+    <text x="256" y="0" font-size="16" font-weight="650" fill="#8ee6d7">agents</text>
+    <text x="318" y="0" font-size="16" font-weight="650" fill="#f8fff8" opacity="0.70">verify and rework</text>
+    <circle cx="480" cy="-5" r="4" fill="#f1ba69"/>
+    <text x="501" y="0" font-size="16" font-weight="650" fill="#8ee6d7">humans</text>
+    <text x="574" y="0" font-size="16" font-weight="650" fill="#f8fff8" opacity="0.70">steward rollout</text>
+  </g>
+</svg>
