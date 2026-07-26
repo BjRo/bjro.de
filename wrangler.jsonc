@@ -2,6 +2,7 @@
     "name": "bjro-blog",
     "compatibility_date": "2026-05-14",
     "assets": {
-      "directory": "./_site"
+      "directory": "./_site",
+      "not_found_handling": "404-page"
     }
   }
