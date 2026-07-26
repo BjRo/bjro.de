@@ -68,7 +68,8 @@ img { max-width: 100%; display: block; }
   gap: 14px;
   align-items: flex-start;
 }
-.masthead h1 {
+.masthead h1,
+.masthead .site-title {
   font-family: var(--serif);
   font-weight: 500;
   font-style: italic;
@@ -77,7 +78,8 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.02em;
   margin: 0;
 }
-.masthead h1 .roman { font-weight: 600; font-style: normal; }
+.masthead h1 .roman,
+.masthead .site-title .roman { font-weight: 600; font-style: normal; }
 .nav {
   font-family: var(--sans);
   display: flex;
@@ -490,6 +492,7 @@ img { max-width: 100%; display: block; }
 
 /* Clean link styles where titles wrap markup-rendered anchors */
 .masthead h1 a,
+.masthead .site-title a,
 .lead h2 a,
 .post-list .title a,
 .archive-list .title a {
