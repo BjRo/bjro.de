@@ -1,4 +1,5 @@
 ---
+title: "Per Aspera Ad Astra"
 excerpt: "Series intro: how four people set out to introduce GraphQL at XING, and the playbook for landing platform-shift technology inside a 1.3k-person company."
 ---
 Since 2013 I've just written a single blog post on my [original blog](http://www.bjro.de). It's

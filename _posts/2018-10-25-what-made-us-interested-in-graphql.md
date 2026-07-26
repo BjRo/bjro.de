@@ -1,4 +1,5 @@
 ---
+title: "What Made Us Interested in GraphQL"
 excerpt: "Four years of API pain at XING — the field-selection hacks, the REST-vs-mobile tug-of-war, and the moment GraphQL stopped feeling theoretical."
 ---
 When I try to trace back why I think `GraphQL` is a good fit for us, I always end up somewhere in the years 2012, 2014 and 2016. Apologies upfront, this is going to be a long one.
