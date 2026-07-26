@@ -14,7 +14,7 @@ I also felt that our project shouldn't be restricted by heritage and that we sho
 
 "Opinions", "doubts", let's be honest, we're all more or less biased one way or another. I definitely know I was biased when it came to certain technologies I had used before (at the time I was a heavy advocate for `Elixir` for example). But I thought it was a good idea to counter balance that bias through a more transparent and structured selection process.
 
-# Enter the Premortem
+## Enter the Premortem
 Some months prior, I had read [Decisive](https://www.goodreads.com/book/show/15798078-decisive) by Chip and Dan Heath and one of the tools that was described in there, was a `Premortem`. In a nutshell a `Premortem` is the hypothetical opposite of a `Postmortem`: You don't analyze the failure after the fact, but instead hypothesize what could turn the project into a spectacular failure and then ask the simple questions of *"Why?"* and *"What would I have done about it, if I had known earlier?"*. 
 
 Done collaboratively it allows you to surface risk and brainstorm detection and mitigation strategies from multiple viewpoints in the earlier phases of an initiative. Those phases when you can still do something about it. Of course this doesn't rule out `Black Swans`, the [unknown unknowns](https://de.wikipedia.org/wiki/There_are_known_knowns), but it certainly helps to form the right mindset: To be proactive, instead of reactive. Since it was only me back then, I mostly used my boss as the sparring partner for the `Premortem`, which also helped me to understand the project from a management perspective better. 
@@ -24,7 +24,7 @@ Done collaboratively it allows you to surface risk and brainstorm detection and 
 You don't need some sophisticated tech for this. Our first version was an `Excel` sheet that was later moved to `Confluence` for documentation purposes. To give you some general idea how this might look like, ours kinda looked like this (even though this is just an excerpt, the real one is multiple pages long):  
 {% include figure image_path="/assets/images/premortem.png" %}
 
-# The checklist
+## The checklist
 You probably know this famous quote from Yogi Berra: **"In theory there is no difference between theory and practice. In practice there is."**. During the `Premortem` phase we developed strong hunch that the technology decision for `XING One` needed to contain some decent amount of hands-on coding in the respective options. 
 
 Because of that we decided to do something that was unusual and uncommon for technology projects at `XING` (and to my knowledge still is): __We spend the first 1,5 months actually implementing a throwaway prototype of our idea in all the relevant technologies__
@@ -68,7 +68,7 @@ Please note that your looking at the summary overview. Internally a longer descr
 >
 >Please also note that we were doing this evaluation in __February 2017__. Work on `apollo-server` had just begun. Re-doing the evaluation today might result in a slightly different ranking. I doubt though, that the top spot for us would be different.
 
-# Why we chose Sangria
+## Why we chose Sangria
 In the end `Sangria`, the `Scala` solution, turned out to be our favorite. It collected many plus points during the prototyping phase:
 
 * The [documentation](https://sangria-graphql.org/learn/) was top-notch

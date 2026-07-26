@@ -32,7 +32,7 @@ I hope you folks enjoy the ride as much as I did!
 Best,
 Björn
 
-# Table of Contents
+## Table of Contents
 1. [What made us interested in GraphQL](/what-made-us-interested-in-graphql/)
 2. [Kickstarting the project](/kickstarting-the-project/)
 3. [Choosing the right technology](/choosing-the-right-technology/)

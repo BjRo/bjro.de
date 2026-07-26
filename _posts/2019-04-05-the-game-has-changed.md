@@ -32,7 +32,7 @@ Now with the game being so fast, decision making solely happens on the field. Pl
 
 If you ever watched a top squad from the higher ranks of a stadium, you'd also probably realized the magnificent coordination that seems to happen intuitively. Gone are the static positions in the past. You see coordinated changes of the system in offense and defense depending on the game situation. Obviously it's not intuitive, it has been trained to the excess into the squad, but sometimes it looks to easy and natural that it has the feeling of intuitiveness.
 
-# So why am I writing about this?
+## So why am I writing about this?
 
 I find that fascinating and beautiful. When I was looking for inspiration on how I wanted to lead an engineering team, I peeked into all sorts of disciplines and professions. Besides the typical management literature two areas that you often end up at are competitive, squad based sports and the military. And I usually prefer the former. 
 
@@ -110,7 +110,7 @@ I'm personally trying to spend more at least 20-25% of my time per week on opera
 ## Embrace that we're all on a way to somewhere
 Like players in the pitch, there's high demand for really great IT professionals on the market. You can try to fight that, but you can also choose to embrace that. Allow your team to be in the spotlight wherever possible. Give the thing you're working on actual faces that people can relate too. Increase their marked value. Aim for having a good and successful time together. Cherish it, because eventually like all good times in life, things will come to an end. One or more of you are going to leave. That's normal and fine. But the relationships stick and your team culture and spirit might also be preserved even when you're not part of it any more.
 
-# Closing thoughts
+## Closing thoughts
 
 Things have become noticeably faster and ever changing compared to 10 or 20 years ago in our profession. Decide for yourself what this means for knowledge work and collaboration. I gave you a brief overview about the conclusions that I derived from this by looking outside of our profession, namely professional football.
 

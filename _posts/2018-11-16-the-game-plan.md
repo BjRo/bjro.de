@@ -34,14 +34,14 @@ Track one would develop the infrastructure and track two would develop the first
 
 The initial plan was to remove `graphql-ruby` out of the equation in July 2017 and to connect the `GraphQL` infrastructure to the product backend via `HTTP` / `JSON` APIs.
 
-# The MVP and later versions
+## The MVP and later versions
 As I already pointed out in one of the earlier posts, we wanted to deliver value as early as possible and at the same time had a larger idea around how the developer experience around the `GraphQL` infrastructure should be. Our lofty goal for the infrastructure was that it should not require any knowledge of `Scala` in order to work with it, but instead use [GraphQL SDL](https://www.prisma.io/blog/graphql-sdl-schema-definition-language-6755bcb9ce51/) together with some custom directives to define the schema. 
 
 That's obviously a lot to figure out and to bring to a production ready state in that timeframe (especially if you didn't yet know `Scala` that well). Because of that we decided to first focus on an intermediate version that didn't use `SDL`, but was using `Scala` to define the schema. That was the version we were shooting for until July 2017. Somewhere in autumn we would then try to figure out how we could marry the `Scala` schema with the `SDL` schema. 
  
 >The idea being the "marrying" was that it would give us a lot flexibility if we could always drop back to `Scala` when we ran into limits with `SDL` or when there was simply functionality that we wanted to have in the schema but that was to complex to be generically expressed via `SDL`. An idea that turned out to be tremendously useful in the end.
 
-# Boundaries for the infrastructure
+## Boundaries for the infrastructure
 One thing we also tried to make as early as possible transparent to the rest of the organization was how we would structure the integration with the underlying APIs and what the implications of our approach would be for our product teams (both technically and organizationally). 
  
 > With "early" I mean this: When I gave the first presentation __0 lines of code__ were written. For the second presentation probably didn't have more than __15%__ of the MVP ready. Nevertheless I think managing assumptions and expectations around a project is crucial for its success. So the remainder of this post is about those other early pillars.
@@ -103,7 +103,7 @@ You'd get back a `JSON` object which has at minimum a `collection` field that co
 
 That's actually good enough to handle the typical scenario of "load list x from here and for each item load something else from there" for a lot of the cases.
 
-# Some last words
+## Some last words
 Today I talked about how we approached building out our `GraphQL` to `REST` gateway from a very high level. I also talked about some of the rules and conventions about how the infrastructure would integrate with the internal APIs. 
 
 Next time around, I'll dive in one specific aspect in particular: What you can do in a software project of this size to maintain adaptiveness, e.g. the ability to make mistakes and being able to course correct with fairly low overhead and cost. 

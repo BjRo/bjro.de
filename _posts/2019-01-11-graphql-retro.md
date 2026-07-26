@@ -21,7 +21,7 @@ Some of the things that I'm going to reflect about today are likely the result o
 
 That being out of the way, let's dive into our learnings and observations:
 
-# 1. Expectations on GraphQL vary dramatically between web and native mobile developers
+## 1. Expectations on GraphQL vary dramatically between web and native mobile developers
 Have you ever called into a `GraphQL` service by hand, without some `GraphQL` specific tooling? Like with `curl` or `fetch`? If you've tried that and have understood the format that a `GraphQL` server expects, then you realize that everyone who is able to do a `REST` call is also able to interact with a `GraphQL` server. They are not too far apart. Sure, the error handling differs significantly, but the general mechanics of obtaining data a very close. 
 
 This enabled for us a more or less straight forward iterative rollout plan: 
@@ -47,14 +47,14 @@ The point to take away from this is that you should plan and setup your `GraphQL
 >
 > In case you wondering: In 2017 I sat next to [Dan Schaefer](https://twitter.com/dlschafer) in the cab on the way to the speakers dinner for the `GraphQL EU` conference and had the chance to pester him with all sorts of questions. Dan is one of the original `GraphQL` creators (besides [Nick Schrock](https://twitter.com/schrockn) and [Lee Byron](https://twitter.com/leeb)).
 
-# 2. Client libraries weren't on par when we started
+## 2. Client libraries weren't on par when we started
 I hinted it in the first point, if you're going to build not only for web but also for the native platforms, you have to be aware that there is quite a difference in breadth and depth of available documentation for those different platforms. When we started in early 2017 documentation for the native client libraries was basically not existent. The `Android` library was in a very early alpha state, the `iOS` version was a bit (but not much) ahead. 
 
 Both of our mobile teams looked at them in `2017` and eventually decided to roll their own tooling. This made the integration into our `OAuth 2.0` flow and the rest of the existing application easier, but obviously also comes with a cost associated. Many of cooler later additions on the client side libraries can't be found in our native mobile applications. 
 
 I guess it's one of the prices you often need to pay as an early adopter. Just looking at `Github` today, it looks like the libraries have nicely developed in the meantime. If faced with a similar choice today, the result would probably be different.
 
-# 3. All client developers struggled with error-handling and partial results
+## 3. All client developers struggled with error-handling and partial results
 In November `2017` I gave a talk about our `GraphQL` experience in Munich while visiting `Autoscout 24`. One thing that stuck with me from the following Q&A is that one of their Lead Engineers was noticeably taken aback by my assessment that client engineers struggle with error handling and partial responses more than expected. From his point of view the partial responses were one of the reasons to use `GraphQL` and he was heavily advocating that on their sided. And now I came along and talked about how our frontend colleagues struggle to make the shift there.
 
 The interesting thing here is that I don't even have a very different personal opinion. I think partial errors are great. That the server is able to give you something back in case he can't resolve all of the data is actually a great premise to me. Especially if your `GraphQL` server (like ours) is a gateway that is remotely talking to other services and the [fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) come into play. Partial results reflect the reality of a distributed platform much better than the normal binary "worked" or "didn't work" approach (when in the latter case maybe just a tiny portion of the data couldn't be resolved). 
@@ -63,7 +63,7 @@ But at least in our company I made the observation that frontend developers aren
 
 Things take a while to stick. Especially if you're coming from a `REST` setup and your work affects many people, I would try to clarify this aspect as one of the earlier topics.
 
-# 4. Even though GraphQL documentation is great, onboard carefully
+## 4. Even though GraphQL documentation is great, onboard carefully
 At the start of 2017, if you wanted to understand how `GraphQL` worked and what kind of assumptions it did, there were already great resources out there, especially [graphql.org](https://graphql.org/). We pointed the first team we worked with towards these resources. Needless to say, it turned out that this wasn't enough. Otherwise I wouldn't be writing about this now :)
 
 Great documentation is awesome, for the case where people actually bother to read it. At least half of the people you typically meet also do this. The other side immediately goes into exploration mode and tries to build something, without going into the documentation. And out of that group from my experience one half reads the documentation when it encounters problems. The other half doesn't even do that. That group usually approached us in frustration about why "this" and "that" wasn't working as they expected.
@@ -78,7 +78,7 @@ From this experience we changed our rollout scheme dramatically. We developed a 
 
 In one of the earlier parts of the series I talked about that we treated everything as an `MVP`: The implemented server, the process and the documentation. Onboarding was a logical addition to this and we continue to do these workshops even in 2019.
 
-# 5. GraphQL type system feels (sometimes) too basic
+## 5. GraphQL type system feels (sometimes) too basic
 When working with a large group of people on a schema, I think `GraphQL` is lacking some basic things in the schema. I think this is independent of whether you work with a single schema or use some form of schema-stitching. 
 
 The first one that comes to mind is the simple concept of `namespaces`. A "profile" in one domain might be something completely different to a "profile" in another domain. You might want to call both "profile". As of now, if you want to have both of them in a schema, you need to make their names unique, usually by prefixing their name somehow. For instance having a `CompanyProfile` and a `MemberProfile`. That's also what we do currently.
@@ -95,14 +95,14 @@ This shows the documentation of a field that is backed by a `REST` API, where mu
 
 But this is a duck-tape solution and again I would prefer to have a real answer similar to this for `GraphQL`. I think the logical solution for this would be to make server side directives part of the exposed schema, but I'm not aware of any plans to add this. 
 
-# 6. GraphQL spec lacks a pagination abstraction
+## 6. GraphQL spec lacks a pagination abstraction
 Sooner or later as an application developer you will encounter the topic of pagination in your schema. The `GraphQL` spec is completely agnostic when it comes to the pagination topic. 
 
 It's not like there isn't a fitting spec available. The [Relay Cursor Connection Specification](https://facebook.github.io/relay/graphql/connections.htm) pretty much exists since the early days of `GraphQL`, but separately from the `GraphQL` spec. Prominent `GraphQL` APIs like [Github](https://developer.github.com/v4/guides/intro-to-graphql/) and [Shopify](https://help.shopify.com/en/api/custom-storefronts/storefront-api/graphql) do make use of it. We also use it more and more (both for real cursors and as an adapter around `limit` and `offset` based APIs).
 
 Not having a default pagination abstraction obviously gives some flexibility and adaptability for `GraphQL` itself, but I can't help to think that `GraphQL` could benefit from having a default abstraction for this out of the box. If there was an explicit concept, tooling could make better use of this and also frontend components would have a more standardized notion of pages of data. 
 
-# 7. Don't be naive with file uploads
+## 7. Don't be naive with file uploads
 Somewhere in the middle of 2017 the topic of file uploads came up. We did the simplest possible solution: Tunneling the binary file as a `Base64` encoded blob though our `GraphQL` mutation. That works, but is in general a very bad idea. You could even call it naive.
 
 Take a look at the following dashboard. Guess where most of the `P999` and `MAX` numbers are coming from :-(
@@ -115,7 +115,7 @@ We're in the process of migrating away from this quick-fix to a separate upload 
 
 I can only advice you not repeat this mistake and keep uploads separately where possible.
 
-# 8. We struggled with our mutation design
+## 8. We struggled with our mutation design
 Oh mutations, another unexpected headache. You see `GraphQL` servers execute hierarchically and sub-selections only apply when the parent resolver was successful.
 
 The first version of mutations was pretty simple in that sense that for successful `REST` calls underneath, we expanded the selection and where they failed, we added an entry for them as error extensions into the global `errors` collection. Straight forward, or so we thought. 
@@ -140,7 +140,7 @@ On the other hand, we broke two basic things that are worth mentioning:
 
 We have some few noteworthy occurrences where for queries, the same team that heavily objected our first mutation design is now more or less perfectly fine with reading out of the `errors` collection in case a query failed. You only realize this in retrospect, but to me this indicates that we as an `API` team maybe gave in to early in order in this area of `GraphQL` to please our customers. 
 
-# 09. Retrofitting into an existing APM solution is easier than you think
+## 09. Retrofitting into an existing APM solution is easier than you think
 When the question comes up today how you would monitor performance and health of your `GraphQL` application, 
 you'll likely eventually end up with [Apollos toolsuite](https://www.apollographql.com/platform/). The company has done a good job capturing the momentum with their former `Apollo Engine` product which was recently superseded by the `Apollo Platform`.
 
@@ -167,7 +167,7 @@ And we've got many more, for example for the internal `REST` client and also the
 
 There's a lot of heated discussion about monitoring tools in our company at the moment and `Apollo` took the `GraphQL` APM space by storm in the last two years, but we found this way both feasible and practical. If there's a killer feature in `Apollo` that we direly want and aren't able to replicate, then we'd probably have a second look at the `Apollo Platform`, but based on the experience of the last two years, we don't feel like we need to.
 
-# 10. Schema-first is only half of the story
+## 10. Schema-first is only half of the story
 When I saw the first bits of [SDL](https://alligator.io/graphql/graphql-sdl/) I immediately liked the idea. We had the challenge at our company that we operate in a polyglot environment and we specifically didn't want to teach the programming language the `GraphQL` server was written in to everyone who contributing to it. On top of that we were searching for a way to have a meaningful discussion about the schema without going too much into the mechanics of it, a good abstraction so to speak. SDL looked like the perfect fit.
 
 And to a certain degree it is. Almost everyone we worked with, be it backend engineer or frontend-engineer, native or web focused, all of them were able to pick up SDL in very short time. However in all of the available `GraphQL` servers I know, the declarative part ends once you hit the resolvers and you're forced to learn the programming language the server is implemented in again. 
@@ -178,7 +178,7 @@ Too be clear we're pretty happy with our results. With our system, we're able to
 
 > In case you're curious: My co-worker David gave an excellent talk about our SDL approach at last [years GraphQL EU conference](https://www.youtube.com/watch?v=kMOq3nf8vKY).
 
-# Conclusion
+## Conclusion
 This post started out as the summary of what we learned in the first year with `GraphQL`. Somewhere in the first half, it somehow reshaped into overall learnings so far. Things usually overlap a bit time-wise and I thought the post is probably more valuable if I share all of our learnings.
 
 I hope I could give you a bit "food for thought" when it comes to `GraphQL`. Like I said in the introduction, my feeling is that we already have enough success stories out there and need to get a more rounded picture.
