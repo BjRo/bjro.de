@@ -36,6 +36,10 @@
   "description": {{ seo_description | jsonify }},
   "url": {{ seo_url | jsonify }},
   "image": {{ seo_image | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ seo_url | jsonify }}
+  },
   {% if page.date %}
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
@@ -45,6 +49,11 @@
     "name": {{ site.author.name | jsonify }},
     "url": {{ site.url | jsonify }},
     "sameAs": {{ site.social.links | jsonify }}
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | jsonify }}
   }
 }
 </script>
