@@ -1,4 +1,5 @@
 ---
+title: "On Agile Codebases"
 excerpt: "Agility isn't a process. It's the technical decisions you made six months ago. The XING One codebase choices that kept us able to actually inspect and adapt."
 ---
 I've participated in efforts to deliver software for more than 15 years now. The first five using the good old waterfall approach with infrequent, big releases; the last 10 years in teams that followed one of the flavors of the agile method. 
