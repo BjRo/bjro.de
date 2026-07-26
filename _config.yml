@@ -11,7 +11,7 @@ baseurl                  :
 google_site_verification : "Ao9ozZz4Tex8Qb6oHnI1UKlsjaJPuY0gBpB-EP_GquY"
 
 # Social Sharing
-og_image                 : "/assets/images/bjoern-portrait.png"
+og_image                 : "/assets/images/bjro.jpg"
 social:
   type                   : Person
   name                   : "Björn Rochel"
@@ -73,13 +73,10 @@ sass:
 
 # Outputting
 permalink: /:title/
-paginate: 20
-paginate_path: /page:num/
 timezone:
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
