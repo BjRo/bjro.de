@@ -1,5 +1,6 @@
 ---
 title: "On Boilerplate and the Death of Old Principles"
+seo_title: "Boilerplate and the Death of Old Principles"
 excerpt: "When a machine can rewrite a module in seconds, do YAGNI and DRY still earn their place? The principles survive — but the reasons we hold them shouldn't."
 ---
 

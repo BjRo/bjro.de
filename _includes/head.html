@@ -5,7 +5,8 @@
 {% assign seo_description = page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
 {% assign seo_url = page.url | absolute_url %}
 {% assign seo_image = page.image | default: site.og_image | absolute_url %}
-<title>{% if page.title %}{{ page.title | strip_html }} — {{ site.title | strip_html }}{% else %}{{ site.title | strip_html }} — {{ site.tagline }}{% endif %}</title>
+{% assign document_title = page.seo_title | default: page.title | strip_html %}
+<title>{% if page.title %}{{ document_title }} — {{ site.author.name }}{% else %}{{ site.title | strip_html }} — {{ site.seo_tagline }}{% endif %}</title>
 <meta name="description" content="{{ seo_description | escape }}" />
 <link rel="canonical" href="{{ seo_url }}" />
 {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}" />{% endif %}

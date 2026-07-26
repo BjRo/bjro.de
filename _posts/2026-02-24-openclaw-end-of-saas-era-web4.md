@@ -1,5 +1,6 @@
 ---
 title: "OpenClaw, the End of the SaaS Playbook, and the Arrival of Web 4.0"
+seo_title: "OpenClaw and the Arrival of Web 4.0"
 excerpt: "OpenAI's OpenClaw hire was framed as a talent acquisition. Zoom out and you see a platform stack being assembled in plain sight — model, agent, app store, distribution, device. The opening move of Web 4.0."
 ---
 
