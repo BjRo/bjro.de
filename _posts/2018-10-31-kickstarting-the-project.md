@@ -19,7 +19,7 @@ and probably many many more.
 
 I always viewed this project as a golden opportunity to do something truly great on our platform. To right some past wrongs. To enable the platform to take a productivity leap where previously tiny steps where the norm. That's why I didn't want to go naive into the project and tried to go some extra miles, that hopefully would accumulate and contribute to the success of the project.
 
-# Setting the initial tone
+## Setting the initial tone
 My boss at the time had already made up his mind about the project name. He wanted to call the project `Everest`, because another project to establish a PAAS via Kubernetes named `Olympus` had been started earlier. I hated that name from the moment I heard it. Especially given that people have died trying to ascend that mountain. And also, to be frank, because I already had a name for this in mind: `XING One`. Luckily I managed to convince him that this one would be a better choice.
 
 Most of the people at my current company know the name, but only very few know where the name originated. Some colleagues think it comes from "Lord of the Rings" (ala the one API to rule them all), but this isn't the case. It's a nod to the book [American Icon](https://www.goodreads.com/book/show/13132620-american-icon) which recounts the story of how Allan Mulally managed save and turn around the Ford Motor Company during the early 2000s. It's a remarkable story of what an aligned team with a shared goal and a clear mission can achieve. Mulallys misson statement for their turnaround strategy was "One team, One plan, One Goal".
@@ -36,7 +36,7 @@ I loved that. It's simple, memorable and uniting. With that it sets the initial 
 >
 >* __One Community__ - Evolve and scale API work via a Community of Practice  
 
-# Aligning other major stakeholders
+## Aligning other major stakeholders
 But this wasn't it. There were still some things that I wanted to get done, before diving into the technical details. One thing on the list was aligning with the major non-technical stakeholders in the company. In this case it was mostly the higher level management of the mobile product organization.
 
 > You might wonder why I consider our product colleagues largely as non-technical. It's a completely valid question, but the answer to that is a whole story for itself. For the moment think of engineering and product management at XING as two different groups, with the usual communication and collaboration challenges that arise from that.
@@ -55,7 +55,7 @@ In the meantime, my boss time did manage to convince one product engineering tea
 >
 >This rift is going to be something I'll separately write about in a future post. __So I leave it at that here with the hindsight that I'd probably approach that portion differently if I had to do it again with all I know today.__
 
-# How do we actually start this?
+## How do we actually start this?
 Great, so the alignment part was kinda covered. I knew what I wanted to do. But I didn't yet know in what technology stack we later would implement `XING One` in. To be honest at the time I also had only vague ideas in how we would approach selecting the target solution. The team wasn't formed yet, it was still just me (Alexis the 2nd member of the team started roughly 3 weeks later). But I had a wild idea: Turning the assumptions I had about `GraphQL` into a checklist, implementing prototype versions of `XING One` in all the candidate technology stacks and then doing a shootout between them. 
 
 How exactly I approached this is a topic for the next entry in the series. Hope you enjoyed this. See you next time around!!!

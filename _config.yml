@@ -2,6 +2,7 @@
 locale                   : "en-US"
 title                    : "Dude, where's my Kaizen?"
 tagline                  : "Field notes on agentic engineering · Hamburg · MMXXVI"
+seo_tagline              : "Agentic Engineering"
 description              : "Field notes on agentic engineering by Björn Rochel — independent coach, working with teams from Hamburg."
 url                      : "https://bjro.de"
 baseurl                  :

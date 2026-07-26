@@ -1,7 +1,11 @@
 <header class="masthead">
   <div class="eyebrow">{{ site.tagline }}</div>
   <div class="masthead-row">
+    {% if page.url == '/' %}
     <h1><a href="{{ '/' | relative_url }}">Dude, where&rsquo;s my <span class="roman">Kaizen</span>?</a></h1>
+    {% else %}
+    <div class="site-title"><a href="{{ '/' | relative_url }}">Dude, where&rsquo;s my <span class="roman">Kaizen</span>?</a></div>
+    {% endif %}
     <nav class="nav">
       {% assign section = page.nav_section | default: page.layout %}
       <a href="{{ '/' | relative_url }}"{% if section == 'home' or page.url == '/' %} class="active"{% endif %}>Writing</a>

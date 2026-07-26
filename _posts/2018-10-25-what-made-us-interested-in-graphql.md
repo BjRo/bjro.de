@@ -1,9 +1,10 @@
 ---
+title: "What Made Us Interested in GraphQL"
 excerpt: "Four years of API pain at XING — the field-selection hacks, the REST-vs-mobile tug-of-war, and the moment GraphQL stopped feeling theoretical."
 ---
 When I try to trace back why I think `GraphQL` is a good fit for us, I always end up somewhere in the years 2012, 2014 and 2016. Apologies upfront, this is going to be a long one.
 
-# 2012
+## 2012
 In 2012 I started working for `XING` in the API - team. Together we launched `XINGs` public `REST` API that same year. The infrastructure for that had already been in place for roughly two years (I think) and was also the data source for `XINGs` own native mobile applications. In fact many of the APIs that you would find later in the public `REST` API originated in the context of those applications and at least for a short time there was a 100% overlap between the public API and what the mobile apps were using. 
 
 One thing we already had at that time was a query parameter called `fields` on the users API and `user_fields` on every API that was referencing users. These query parameters expected a comma separated list of field names and if you would call the API that way, you'd only get back what you had requested. It even supported nesting so you could request `business_address.city` to only get the city portion of the business address. If you look at it now from a `GraphQL` perspective, you might think "wait a minute, that sounds almost like a mini selection set" and I think this isn't too far off. It had the same benefits (tracking, e.g. who is using what and bandwidth optimization, e.g. only transfer what the client actually needs) but obviously ours was a very simple, poor mans version of the idea.
@@ -36,7 +37,7 @@ Remember part of the teams mission statement was to make the APIs as easy and se
 
 Ultimately this experience made me realize that whatever solution might appear in the future that would improve the API game for mobile applications, it would be one with a very good developer experience and strong, multi platform tooling support.
 
-# 2014
+## 2014
 Between 2012 and 2014 something interesting happened somewhere else inside `XING`. When I started in the company in 2012, the majority of the developers was still working in one of two monolithic applications. One being written in `Perl` (the original `OpenBC`) and another one in `Ruby on Rails` (containing all recent developments). The API infrastructure was part of the big `Ruby on Rails` application. Overall it kinda looked like this (I'm obviously omitting some details here for simplicity):
 
 {% include figure image_path="/assets/images/xing-2012.png" %}
@@ -67,7 +68,7 @@ The list can probably go further. The jump into this kind of architecture is not
 
 > It makes me even more chuckle seeing some people on the internet advocating micro-service architecture (that shares similar traits) to small teams when starting their app. Good luck my friends, good luck.
 
-# 2016
+## 2016
 During 2016 more interesting stuff happened. The quick fixes outlined above allowed us to parallelize our API development and with that our mobile development quite a bit. And we grew as an organization a lot. And when I say a lot, I mean it. Just look at the following picture.
 
 {% include figure image_path="/assets/images/xing-growth.png" %}
@@ -78,7 +79,7 @@ Also `React` became a thing (pushed by our colleagues from the Frontend Architec
 
 These two things in combination were the last drops that were necessary to convince us that we needed to do something more radical about the API topic and a new project was started. This eventually became `XING One`, the project and `XING One` the application which I want to talk about in more detail in this series.
 
-# Our requirements
+## Our requirements
 This was probably the longest prologue I've ever written for a blog post. I hope I didn't lose you on the way. What I hopefully managed to convey is the steps and missteps we made with our API and what impact it had on the organization as a whole as it grew. 
 
 When we were gathering requirements for our new project, one thing became very clear: We wanted the new solution to have the good properties of our previous ones, while having less of their downsides. 
@@ -100,7 +101,7 @@ The picture that was forming in our head as a goal looked like this:
 
 {% include figure image_path="/assets/images/xing-one-idea.png" %}
 
-# So why GraphQL?
+## So why GraphQL?
 I still remember the first wave of `GraphQL` talks that were coming out in 2015. They weren't showing much code at the time, but I remember thinking: "Jeeez, this might be it", "Hey that almost sounds like they had similar problems" or "I bet this could develop into something that might be super helpful to fix our API issues".
 
 If you go through the desired characteristics, some obviously needed some creativity from us, but others were already solved by how `GraphQL` was conceptually working.

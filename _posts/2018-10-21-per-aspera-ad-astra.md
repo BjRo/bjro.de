@@ -1,4 +1,5 @@
 ---
+title: "Per Aspera Ad Astra"
 excerpt: "Series intro: how four people set out to introduce GraphQL at XING, and the playbook for landing platform-shift technology inside a 1.3k-person company."
 ---
 Since 2013 I've just written a single blog post on my [original blog](http://www.bjro.de). It's
@@ -32,7 +33,7 @@ I hope you folks enjoy the ride as much as I did!
 Best,
 Björn
 
-# Table of Contents
+## Table of Contents
 1. [What made us interested in GraphQL](/what-made-us-interested-in-graphql/)
 2. [Kickstarting the project](/kickstarting-the-project/)
 3. [Choosing the right technology](/choosing-the-right-technology/)
