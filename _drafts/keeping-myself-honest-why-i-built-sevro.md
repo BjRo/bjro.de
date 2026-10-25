@@ -17,11 +17,11 @@ I feel like these are fairly obvious questions. After all, we don't run applicat
 
 Working with coding agents for a while doesn't mean you stop running into surprises. My intuition has certainly led me in the wrong direction before. Without evaluation tooling, I would have made costly changes.
 
-An example: On my current project, there's an AFK-oriented skill that takes a ticket and implements it all the way to an open PR, with reviews, convergence loops, etc. all in the mix. It's built on top of LangGraph.
+An example: On my current project, there's an AFK-oriented skill that takes a ticket and implements it all the way to an open PR, with reviews, convergence loops, etc. all in the mix. It's built on top of [LangGraph](https://github.com/langchain-ai/langgraph).
 
 > Sidenote: Don't use LangGraph for such things these days, but that's a story for another day.
 
-Anyway, in this setup Codex interacts with the tooling and polls the LangGraph application for status updates.
+Anyway, in this setup [Codex](https://github.com/openai/codex) interacts with the tooling and polls the LangGraph application for status updates.
 
 Using eval tooling and looking at the hard data, it became obvious that the aggressive context management across LangGraph phases and the polling from Codex were adding considerable time and cost, with only modest quality improvements.
 
@@ -47,7 +47,7 @@ I want a better basis for shipping a change than my impression that it worked we
 
 ## Meet Sevro
 
-I knew roughly how evals worked in the context of agentic APIs. There is tooling for these, such as Langfuse or Braintrust. I'd used promptfoo before, and Claude's built-in eval tooling. But I couldn't find a solution that quite matched what I wanted: evaluating individual skills as well as the integrated capabilities of a local agentic setup, ideally easy for Codex or Claude to pick up and reusing my subscription login.
+I knew roughly how evals worked in the context of agentic APIs. There is tooling for these, such as [Langfuse](https://langfuse.com/) or [Braintrust](https://www.braintrust.dev/). I'd used [promptfoo](https://github.com/promptfoo/promptfoo) before, and [Claude's built-in eval tooling](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests). But I couldn't find a solution that quite matched what I wanted: evaluating individual skills as well as the integrated capabilities of a local agentic setup, ideally easy for Codex or Claude to pick up and reusing my subscription login.
 
 I also wanted the coding agent to run these evaluations inside its own session, so it could make a change, measure the result, and iterate.
 
@@ -61,7 +61,7 @@ If you've read *Red Rising* by [Pierce Brown](https://www.piercebrown.com/), you
 
 Sevro runs repeatable evaluations of coding agents. You give it a case, a setup to run, and criteria for success. It retains the execution evidence and grading results so you can inspect what happened and compare outcomes.
 
-I use it to evaluate individual skills and to benchmark broader agentic setups. My day-to-day work is mostly in Codex now, so that is where it has received the most attention. There is also best-effort Claude Code support, and it can be extended to other harnesses in the future.
+I use it to evaluate individual skills and to benchmark broader agentic setups. My day-to-day work is mostly in Codex now, so that is where it has received the most attention. There is also best-effort [Claude Code](https://github.com/anthropics/claude-code) support, and it can be extended to other harnesses in the future.
 
 ## How it changed how I work
 
@@ -79,17 +79,17 @@ Sevro combines deterministic checks with agentic grading. Some properties can be
 
 Isolation was important to me from the beginning. An agent evaluating one case should not be able to browse previous runs or look into git history to discover what a successful answer looked like. A grading agent should receive the evidence for the trial it is assessing, with access bounded accordingly.
 
-Sevro uses native Codex or Claude sandboxing while running the trial, with support for shared library paths and caches. It uses macOS Seatbelt or Linux bubblewrap to isolate graders, which receive access to the relevant session's transcript.
+Sevro uses native Codex or Claude sandboxing while running the trial, with support for shared library paths and caches. It uses macOS Seatbelt or Linux [bubblewrap](https://github.com/containers/bubblewrap) to isolate graders, which receive access to the relevant session's transcript.
 
 Getting a result is only useful if I can trust how that result was obtained.
 
 ## An experiment of its own
 
-Sevro is written in TypeScript and runs on Bun and Node.js. The language choice was fairly practical. I've worked with TypeScript before, and I have a feeling for what good TypeScript code looks like.
+Sevro is written in `TypeScript` and runs on [Bun](https://bun.sh/) and [Node.js](https://nodejs.org/en). The language choice was fairly practical. I've worked with TypeScript before, and I have a feeling for what good TypeScript code looks like.
 
 I didn't write a single line of Sevro by hand. If you're curious what a larger codebase built entirely with agents can look like, here's one example.
 
-One experiment I'd like to try in the future is an agentic migration to Go or Rust. How well can an agent translate a working system into another language while preserving its behaviour? I don't know Rust, which would make assessing the result a rather different exercise. But I'm super curious to try.
+One experiment I'd like to try in the future is an agentic migration to `Go` or `Rust`. How well can an agent translate a working system into another language while preserving its behaviour? I don't know Rust, which would make assessing the result a rather different exercise. But I'm super curious to try.
 
 Sevro works for me, which doesn't mean it's perfect, bug-free or works for everyone out of the box, though I've spent quite a while on cleanup and documentation.
 
