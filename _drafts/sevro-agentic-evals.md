@@ -1,6 +1,7 @@
 ---
-title: "Keeping Myself Honest: Why I Built Sevro"
-excerpt: "A sensible change made my agentic workflow more expensive. On measuring the skills and harnesses we build, and why I created Sevro to help."
+title: "Sevro: Keeping Agentic Engineering Honest"
+permalink: /sevro-agentic-evals/
+excerpt: "How I evaluate skills, compare coding models, and check whether my agentic harness earns its keep using repeatable benchmarks."
 ---
 
 Working in agentic engineering is a somewhat funny experience. There is so much noise everywhere and the pace is hard to keep up with, even for the people working full-time in this field. Every new model arrives with a lot of vendor fanfare, with vendors boasting about why it's revolutionary and ahead of the competition. And the time between model releases is getting shorter and shorter.
