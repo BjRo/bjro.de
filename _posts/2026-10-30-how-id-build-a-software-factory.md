@@ -145,6 +145,14 @@ That is what I mean by non-invasive. Observability should sit around the agent's
 
 Those traces give me, and later an investigating agent with access to them, a way to analyse problems across runs. Where does the agent repeatedly get stuck? Which instruction is being missed? Where do retries consume time without getting anywhere? A recurring failure can then become an eval case, and I can check whether the fix actually addresses it.
 
+**Addendum: native OpenTelemetry**
+
+After publishing this, [Mehdi Mohseni](https://www.linkedin.com/in/mehdimohseni/) pointed out a simpler way to associate telemetry with a ticket. Claude Code reads `OTEL_RESOURCE_ATTRIBUTES` from the session's environment, so setting it to `ticket.id=ABC-123` attaches that identifier to its exported metrics and events. The value should not contain spaces. Thanks for the tip, Mehdi!
+
+I tested the same approach with Codex and Langfuse, and it worked there too. With native OpenTelemetry export configured, I can set the ticket ID before starting the agent and use it to correlate the session's telemetry without asking a skill to report it. The environment variable supplies the metadata; telemetry export still needs to be configured separately.
+
+I'm removing my observability plugin from my own setup in favour of this approach. That is exactly why I want the factory's parts to be optional and replaceable: when a simpler option works, I can take one out.
+
 ### 5. Decisions that agents can find
 
 I want a straightforward way to capture significant decisions and retrieve them when they matter.
