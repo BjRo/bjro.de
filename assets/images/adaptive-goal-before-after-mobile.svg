@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1110" viewBox="0 0 480 1110" role="img" aria-labelledby="title desc">
+<title id="title">From fixed pipeline to adaptive goal</title><desc id="desc">Before: fixed stages, fresh context at each phase, fixed model choices and repeated broad reviews. After: one native goal owner, readiness as selected, direct or delegated implementation, risk-selected independent review and bounded repair.</desc>
+<rect width="480" height="1110" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M28 32H452" stroke="#b53c2f" stroke-width="3"/>
+<text x="28" y="70" class="kicker" text-anchor="start">THE REDESIGN</text>
+<text x="28" y="118" class="title" text-anchor="start">What changed</text>
+<rect x="28" y="150" width="424" height="164" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="179" class="label" text-anchor="start">Ownership</text>
+<text x="44" y="206" class="kicker" text-anchor="start">BEFORE</text>
+<text x="44" y="230" class="body" text-anchor="start">Pipeline orchestrates stages</text>
+<text x="44" y="257" class="kicker" text-anchor="start">AFTER</text>
+<text x="44" y="287" class="body" text-anchor="start">One native goal owner</text>
+<rect x="28" y="326" width="424" height="164" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="355" class="label" text-anchor="start">Context</text>
+<text x="44" y="382" class="kicker" text-anchor="start">BEFORE</text>
+<text x="44" y="406" class="body" text-anchor="start">Fresh at every phase</text>
+<text x="44" y="433" class="kicker" text-anchor="start">AFTER</text>
+<text x="44" y="463" class="body" text-anchor="start">Keep task context; delegate as useful</text>
+<rect x="28" y="502" width="424" height="164" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="531" class="label" text-anchor="start">Implementation</text>
+<text x="44" y="558" class="kicker" text-anchor="start">BEFORE</text>
+<text x="44" y="582" class="body" text-anchor="start">Fixed model by stage</text>
+<text x="44" y="609" class="kicker" text-anchor="start">AFTER</text>
+<text x="44" y="639" class="body" text-anchor="start">Route by difficulty and handoff cost</text>
+<rect x="28" y="678" width="424" height="164" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="707" class="label" text-anchor="start">Assurance</text>
+<text x="44" y="734" class="kicker" text-anchor="start">BEFORE</text>
+<text x="44" y="758" class="body" text-anchor="start">Broad repeat reviews</text>
+<text x="44" y="785" class="kicker" text-anchor="start">AFTER</text>
+<text x="44" y="815" class="body" text-anchor="start">Risk-selected independent review</text>
+<rect x="28" y="854" width="424" height="164" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="883" class="label" text-anchor="start">Repair</text>
+<text x="44" y="910" class="kicker" text-anchor="start">BEFORE</text>
+<text x="44" y="934" class="body" text-anchor="start">Repeat until no findings</text>
+<text x="44" y="961" class="kicker" text-anchor="start">AFTER</text>
+<text x="44" y="991" class="body" text-anchor="start">Bounded repairs; focused follow-up</text>
+<text x="28" y="1072" class="small" text-anchor="start">One goal: a usable outcome.</text>
+</svg>

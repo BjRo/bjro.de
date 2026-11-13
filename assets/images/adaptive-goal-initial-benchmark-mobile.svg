@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg role="img" aria-labelledby="title desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="345.6pt" height="540pt" viewBox="0 0 345.6 540" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="title">The original pipeline benchmark</title><desc id="desc">August 7 exploratory comparison, four tasks and one trial per configuration. Codex vanilla passed four tasks at 3.6 minutes mean; the pipeline passed three at 18.5 minutes, 5.1 times as long. Claude vanilla passed four at 6.9 minutes; the pipeline passed two at 23.4 minutes, 3.4 times as long.</desc>
+ <title>The original pipeline benchmark</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>The original pipeline benchmark</dc:title>
+    <dc:date>2026-11-13T10:07:17.012764</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 540 
+L 345.6 540 
+L 345.6 0 
+L 0 0 
+z
+" style="fill: #fffdf8"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 76.032 181.575 
+L 105.591467 181.575 
+L 105.591467 165.006818 
+L 76.032 165.006818 
+z
+" clip-path="url(#p764c4ac547)" style="fill: #c6c4b9"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 76.032 218.393182 
+L 227.638613 218.393182 
+L 227.638613 201.825 
+L 76.032 201.825 
+z
+" clip-path="url(#p764c4ac547)" style="fill: #b53c2f"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="108.868267" y="175.888956" transform="rotate(-0 108.868267 175.888956)">3.6 min</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="230.915413" y="212.707138" transform="rotate(-0 230.915413 212.707138)">18.5 min</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 76.032 348.975 
+L 132.543147 348.975 
+L 132.543147 332.406818 
+L 76.032 332.406818 
+z
+" clip-path="url(#pda23ca18ff)" style="fill: #c6c4b9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 76.032 385.793182 
+L 267.7248 385.793182 
+L 267.7248 369.225 
+L 76.032 369.225 
+z
+" clip-path="url(#pda23ca18ff)" style="fill: #b53c2f"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="135.819947" y="343.288956" transform="rotate(-0 135.819947 343.288956)">6.9 min</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="271.0016" y="380.107138" transform="rotate(-0 271.0016 380.107138)">23.4 min</text>
+   </g>
+  </g>
+  <g id="line2d_1">
+   <path d="M 20.736 10.8 
+L 324.864 10.8 
+" style="fill: none; stroke: #b53c2f; stroke-width: 2; stroke-linecap: square"/>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #b53c2f" x="20.736" y="27" transform="rotate(-0 20.736 27)">THE FIRST BENCHMARK</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 20px; font-family: Georgia, serif; text-anchor: start; fill: #252521" x="20.736" y="56.7" transform="rotate(-0 20.736 56.7)">The pipeline lost to vanilla</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="81" transform="rotate(-0 20.736 81)">August 7 · four tasks · one run per task</text>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 11px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="129.6" transform="rotate(-0 20.736 129.6)">CODEX / GPT-5.5</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="170.1" transform="rotate(-0 20.736 170.1)">Vanilla</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="205.2" transform="rotate(-0 20.736 205.2)">Pipeline</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="76.032" y="253.8" transform="rotate(-0 76.032 253.8)">Vanilla 4 / 4  ·  Pipeline 3 / 4 tasks passed  ·  5.1× time</text>
+  </g>
+  <g id="text_12">
+   <text style="font-weight: 700; font-size: 11px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="297" transform="rotate(-0 20.736 297)">CLAUDE / SONNET 5</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="337.5" transform="rotate(-0 20.736 337.5)">Vanilla</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="372.6" transform="rotate(-0 20.736 372.6)">Pipeline</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="76.032" y="421.2" transform="rotate(-0 76.032 421.2)">Vanilla 4 / 4  ·  Pipeline 2 / 4 tasks passed  ·  3.4× time</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 9px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="502.2" transform="rotate(-0 20.736 502.2)">Mean elapsed time per task; exploratory N=1 per configuration.</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="518.4" transform="rotate(-0 20.736 518.4)">Compare within each harness. Pipeline cost was incomplete.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p764c4ac547">
+   <rect x="76.032" y="151.2" width="221.184" height="81"/>
+  </clipPath>
+  <clipPath id="pda23ca18ff">
+   <rect x="76.032" y="318.6" width="221.184" height="81"/>
+  </clipPath>
+ </defs>
+</svg>

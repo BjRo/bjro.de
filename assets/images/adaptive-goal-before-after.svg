@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+<title id="title">From fixed pipeline to adaptive goal</title><desc id="desc">Before: fixed stages, fresh context at each phase, fixed model choices and repeated broad reviews. After: one native goal owner, readiness as selected, direct or delegated implementation, risk-selected independent review and bounded repair.</desc>
+<rect width="960" height="660" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M40 32H920" stroke="#b53c2f" stroke-width="3"/>
+<text x="40" y="70" class="kicker" text-anchor="start">THE REDESIGN</text>
+<text x="40" y="120" class="title" text-anchor="start">What changed</text>
+<rect x="40" y="152" width="880" height="65" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="60" y="193" class="label" text-anchor="start">BEFORE · FIXED PIPELINE</text>
+<text x="500" y="193" class="label" text-anchor="start">AFTER · ADAPTIVE GOAL</text>
+<text x="60" y="246" class="small" text-anchor="start">Ownership</text>
+<text x="60" y="274" class="body" text-anchor="start">Pipeline orchestrates stages</text>
+<text x="500" y="274" class="body" text-anchor="start">One native goal owner</text>
+<path d="M60 289H900" stroke="#d8d5ca"/>
+<text x="60" y="324" class="small" text-anchor="start">Context</text>
+<text x="60" y="352" class="body" text-anchor="start">Fresh at every phase</text>
+<text x="500" y="352" class="body" text-anchor="start">Keep task context; delegate as useful</text>
+<path d="M60 367H900" stroke="#d8d5ca"/>
+<text x="60" y="402" class="small" text-anchor="start">Implementation</text>
+<text x="60" y="430" class="body" text-anchor="start">Fixed model by stage</text>
+<text x="500" y="430" class="body" text-anchor="start">Route by difficulty and handoff cost</text>
+<path d="M60 445H900" stroke="#d8d5ca"/>
+<text x="60" y="480" class="small" text-anchor="start">Assurance</text>
+<text x="60" y="508" class="body" text-anchor="start">Broad repeat reviews</text>
+<text x="500" y="508" class="body" text-anchor="start">Risk-selected independent review</text>
+<path d="M60 523H900" stroke="#d8d5ca"/>
+<text x="60" y="558" class="small" text-anchor="start">Repair</text>
+<text x="60" y="586" class="body" text-anchor="start">Repeat until no findings</text>
+<text x="500" y="586" class="body" text-anchor="start">Bounded repairs; focused follow-up</text>
+<path d="M60 601H900" stroke="#d8d5ca"/>
+<text x="40" y="642" class="small" text-anchor="start">Both aim to carry a bounded request to a usable outcome.</text>
+</svg>

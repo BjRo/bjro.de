@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+<title id="title">The cost of starting over</title><desc id="desc">A schematic pipeline repeatedly loads the ticket, instructions and repository context. A retained owner carries understanding forward and delegates bounded assignments.</desc>
+<rect width="960" height="680" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M40 32H920" stroke="#b53c2f" stroke-width="3"/>
+<text x="40" y="70" class="kicker" text-anchor="start">01 / CONTEXT HAS A COST</text>
+<text x="40" y="120" class="title" text-anchor="start">Every handoff rebuilds understanding</text>
+<text x="40" y="167" class="small" text-anchor="start">Original pipeline · schematic; repair and reflection omitted</text>
+<rect x="40" y="200" width="160" height="210" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="56" y="237" class="label" text-anchor="start">Plan</text>
+<path d="M56 255H184" stroke="#d8d5ca"/>
+<text x="56" y="286" class="small" text-anchor="start">Read ticket</text>
+<text x="56" y="319" class="small" text-anchor="start">Load rules</text>
+<text x="56" y="352" class="small" text-anchor="start">Inspect repo</text>
+<text x="56" y="390" class="small" text-anchor="start">Fresh context</text>
+<path d="M202 303H217" class="arrow"/>
+<rect x="220" y="200" width="160" height="210" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="236" y="237" class="label" text-anchor="start">Challenge</text>
+<path d="M236 255H364" stroke="#d8d5ca"/>
+<text x="236" y="286" class="small" text-anchor="start">Read ticket</text>
+<text x="236" y="319" class="small" text-anchor="start">Load rules</text>
+<text x="236" y="352" class="small" text-anchor="start">Inspect repo</text>
+<text x="236" y="390" class="small" text-anchor="start">Fresh context</text>
+<path d="M382 303H397" class="arrow"/>
+<rect x="400" y="200" width="160" height="210" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="416" y="237" class="label" text-anchor="start">Implement</text>
+<path d="M416 255H544" stroke="#d8d5ca"/>
+<text x="416" y="286" class="small" text-anchor="start">Read ticket</text>
+<text x="416" y="319" class="small" text-anchor="start">Load rules</text>
+<text x="416" y="352" class="small" text-anchor="start">Inspect repo</text>
+<text x="416" y="390" class="small" text-anchor="start">Fresh context</text>
+<path d="M562 303H577" class="arrow"/>
+<rect x="580" y="200" width="160" height="210" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="596" y="237" class="label" text-anchor="start">Review</text>
+<path d="M596 255H724" stroke="#d8d5ca"/>
+<text x="596" y="286" class="small" text-anchor="start">Read ticket</text>
+<text x="596" y="319" class="small" text-anchor="start">Load rules</text>
+<text x="596" y="352" class="small" text-anchor="start">Inspect repo</text>
+<text x="596" y="390" class="small" text-anchor="start">Fresh context</text>
+<path d="M742 303H757" class="arrow"/>
+<rect x="760" y="200" width="160" height="210" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="776" y="237" class="label" text-anchor="start">Prepare PR</text>
+<path d="M776 255H904" stroke="#d8d5ca"/>
+<text x="776" y="286" class="small" text-anchor="start">Read ticket</text>
+<text x="776" y="319" class="small" text-anchor="start">Load rules</text>
+<text x="776" y="352" class="small" text-anchor="start">Inspect repo</text>
+<text x="776" y="390" class="small" text-anchor="start">Fresh context</text>
+<text x="40" y="460" class="label" text-anchor="start">Retained owner</text>
+<text x="40" y="492" class="body" text-anchor="start">Keep scope, decisions and acceptance in one place.</text>
+<rect x="40" y="520" width="880" height="108" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="62" y="557" class="label" text-anchor="start">One continuing task context</text>
+<text x="62" y="592" class="body" text-anchor="start">Delegate when independence, model choice or parallelism earns its cost.</text>
+</svg>

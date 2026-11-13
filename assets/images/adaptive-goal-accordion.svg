@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="930" viewBox="0 0 960 930" role="img" aria-labelledby="title desc">
+<title id="title">Adaptive Goal expands with the work</title><desc id="desc">One native goal owner keeps scope, acceptance, decisions and completion. Difficulty chooses implementation placement. Consequence risk chooses assurance. Selected fresh Standards and Spec readers return findings for at most two shared repair attempts.</desc>
+<rect width="960" height="930" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M40 32H920" stroke="#b53c2f" stroke-width="3"/>
+<text x="40" y="70" class="kicker" text-anchor="start">02 / THE ACCORDION</text>
+<text x="40" y="120" class="title" text-anchor="start">One owner. Room to expand.</text>
+<rect x="40" y="150" width="880" height="112" rx="5" fill="#f0eee5" stroke="#252521"/>
+<text x="64" y="189" class="label" text-anchor="start">MAIN THREAD · NATIVE GOAL OWNER</text>
+<text x="64" y="226" class="body" text-anchor="start">Scope · acceptance · readiness when selected · decisions · completion</text>
+<path d="M480 264V300" class="arrow"/>
+<text x="40" y="330" class="kicker" text-anchor="start">IMPLEMENTATION DIFFICULTY → RESOURCES</text>
+<rect x="40" y="353" width="280" height="132" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="58" y="389" class="label" text-anchor="start">Stay here</text>
+<text x="58" y="427" class="body" text-anchor="start">Current route fits, or</text>
+<text x="58" y="455" class="body" text-anchor="start">handoff will not repay.</text>
+<rect x="340" y="353" width="280" height="132" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="358" y="389" class="label" text-anchor="start">Route a delegate</text>
+<text x="358" y="427" class="body" text-anchor="start">A different model or</text>
+<text x="358" y="455" class="body" text-anchor="start">effort is worthwhile.</text>
+<rect x="640" y="353" width="280" height="132" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="658" y="389" class="label" text-anchor="start">Split independent work</text>
+<text x="658" y="427" class="body" text-anchor="start">Settled interfaces,</text>
+<text x="658" y="455" class="body" text-anchor="start">bounded assignments.</text>
+<path d="M480 487V526" class="arrow"/>
+<text x="40" y="556" class="kicker" text-anchor="start">CONSEQUENCE RISK → ASSURANCE</text>
+<rect x="40" y="580" width="280" height="154" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="60" y="619" class="label" text-anchor="start">Routine work</text>
+<text x="60" y="656" class="body" text-anchor="start">Required checks;</text>
+<text x="60" y="685" class="body" text-anchor="start">review may be omitted.</text>
+<rect x="340" y="580" width="580" height="154" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="360" y="619" class="label" text-anchor="start">When independent review is selected</text>
+<rect x="360" y="642" width="240" height="62" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<rect x="620" y="642" width="280" height="62" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="480" y="681" class="body" text-anchor="middle">Standards reader</text>
+<text x="760" y="681" class="body" text-anchor="middle">Spec reader</text>
+<path d="M630 736V771" class="arrow"/>
+<rect x="340" y="779" width="580" height="90" rx="5" fill="#f0eee5" stroke="#b53c2f"/>
+<text x="360" y="813" class="label" text-anchor="start">Repair → checks → focused follow-up</text>
+<text x="360" y="847" class="body" text-anchor="start">At most two implementation repair attempts, shared.</text>
+<text x="40" y="906" class="small" text-anchor="start">The owner retains the goal throughout. Independent readers start fresh.</text>
+</svg>

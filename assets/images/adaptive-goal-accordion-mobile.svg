@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1170" viewBox="0 0 480 1170" role="img" aria-labelledby="title desc">
+<title id="title">One owner, room to expand</title><desc id="desc">The native goal owner retains scope, acceptance, decisions and completion. Difficulty selects direct implementation, a routed delegate, or independent assignments. Risk selects assurance with fresh review readers and at most two shared repair attempts.</desc>
+<rect width="480" height="1170" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M28 32H452" stroke="#b53c2f" stroke-width="3"/>
+<text x="28" y="70" class="kicker" text-anchor="start">02 / THE ACCORDION</text>
+<text x="28" y="116" class="label" text-anchor="start">One owner. Room to expand.</text>
+<rect x="28" y="150" width="424" height="126" rx="5" fill="#f0eee5" stroke="#252521"/>
+<text x="44" y="182" class="label" text-anchor="start">Native goal · main thread</text>
+<text x="44" y="214" class="body" text-anchor="start">Scope, acceptance, decisions,</text>
+<text x="44" y="244" class="body" text-anchor="start">readiness and completion.</text>
+<path d="M240 278V307" class="arrow"/>
+<text x="28" y="341" class="kicker" text-anchor="start">DIFFICULTY → RESOURCES</text>
+<rect x="28" y="363" width="424" height="77" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="393" class="label" text-anchor="start">Stay here</text>
+<text x="44" y="422" class="body" text-anchor="start">The handoff will not repay.</text>
+<rect x="28" y="454" width="424" height="77" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="484" class="label" text-anchor="start">Route a delegate</text>
+<text x="44" y="513" class="body" text-anchor="start">A different model or effort helps.</text>
+<rect x="28" y="545" width="424" height="77" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="575" class="label" text-anchor="start">Split independent work</text>
+<text x="44" y="604" class="body" text-anchor="start">Settled interfaces; bounded parts.</text>
+<path d="M240 625V654" class="arrow"/>
+<text x="28" y="690" class="kicker" text-anchor="start">CONSEQUENCE → ASSURANCE</text>
+<rect x="28" y="712" width="424" height="83" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="44" y="744" class="label" text-anchor="start">Routine work</text>
+<text x="44" y="776" class="body" text-anchor="start">Checks; review can be omitted.</text>
+<rect x="28" y="812" width="424" height="133" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="845" class="label" text-anchor="start">When review is selected</text>
+<rect x="44" y="866" width="184" height="53" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<rect x="244" y="866" width="192" height="53" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="136" y="901" class="body" text-anchor="middle">Standards</text>
+<text x="340" y="901" class="body" text-anchor="middle">Spec</text>
+<path d="M240 947V979" class="arrow"/>
+<rect x="28" y="988" width="424" height="112" rx="5" fill="#f0eee5" stroke="#b53c2f"/>
+<text x="44" y="1019" class="label" text-anchor="start">Repair → checks → follow-up</text>
+<text x="44" y="1051" class="body" text-anchor="start">At most two implementation repairs,</text>
+<text x="44" y="1081" class="body" text-anchor="start">shared across findings and providers.</text>
+<text x="28" y="1135" class="small" text-anchor="start">The owner stays. Reviewers start fresh.</text>
+</svg>

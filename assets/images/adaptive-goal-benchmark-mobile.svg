@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg role="img" aria-labelledby="title desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="345.6pt" height="518.4pt" viewBox="0 0 345.6 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="title">November workflow calibration</title><desc id="desc">Updated adaptive-goal averaged 2.47 times vanilla estimated model cost, 1.94 times elapsed time, and 3.94 times tokens. Four calibration tasks ran twice each; controls were historical.</desc>
+ <title>November workflow calibration</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>November workflow calibration</dc:title>
+    <dc:date>2026-11-13T10:04:56.472916</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 345.6 518.4 
+L 345.6 0 
+L 0 0 
+z
+" style="fill: #fffdf8"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 20.736 156.0384 
+L 164.146176 156.0384 
+L 164.146176 142.0416 
+L 20.736 142.0416 
+z
+" clip-path="url(#p5279c28d7f)" style="fill: #b53c2f"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 78.7968 160.704 
+L 78.7968 137.376 
+" clip-path="url(#p5279c28d7f)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #252521"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="169.952256" y="152.157187" transform="rotate(-0 169.952256 152.157187)">2.47×</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 20.736 238.9824 
+L 133.373952 238.9824 
+L 133.373952 224.9856 
+L 20.736 224.9856 
+z
+" clip-path="url(#pb3c5232e89)" style="fill: #b53c2f"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 78.7968 243.648 
+L 78.7968 220.32 
+" clip-path="url(#pb3c5232e89)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #252521"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="139.180032" y="235.101188" transform="rotate(-0 139.180032 235.101188)">1.94×</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_4">
+    <path d="M 20.736 321.9264 
+L 249.495552 321.9264 
+L 249.495552 307.9296 
+L 20.736 307.9296 
+z
+" clip-path="url(#p395d9e2e92)" style="fill: #b53c2f"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 78.7968 326.592 
+L 78.7968 303.264 
+" clip-path="url(#p395d9e2e92)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #252521"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="255.301632" y="318.045187" transform="rotate(-0 255.301632 318.045187)">3.94×</text>
+   </g>
+  </g>
+  <g id="line2d_4">
+   <path d="M 20.736 10.368 
+L 324.864 10.368 
+" style="fill: none; stroke: #b53c2f; stroke-width: 2; stroke-linecap: square"/>
+  </g>
+  <g id="text_4">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #b53c2f" x="20.736" y="25.92" transform="rotate(-0 20.736 25.92)">03 / WORKFLOW CALIBRATION</text>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 20px; font-family: Georgia, serif; text-anchor: start; fill: #252521" x="20.736" y="57.024" transform="rotate(-0 20.736 57.024)">The price of assurance</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="82.944" transform="rotate(-0 20.736 82.944)">November 3 · means across four tasks · two runs each</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="132.192" transform="rotate(-0 20.736 132.192)">Estimated model cost</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="178.848" transform="rotate(-0 20.736 178.848)">$0.088 → $0.218</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="215.136" transform="rotate(-0 20.736 215.136)">Elapsed time</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="261.792" transform="rotate(-0 20.736 261.792)">84.5s → 163.6s</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #252521" x="20.736" y="298.08" transform="rotate(-0 20.736 298.08)">Total tokens</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="344.736" transform="rotate(-0 20.736 344.736)">191,672 → 755,135</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="445.824" transform="rotate(-0 20.736 445.824)">Dashed mark: historical vanilla = 1×</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 9px; font-family: Arial, Helvetica, sans-serif; text-anchor: start; fill: #68685f" x="20.736" y="471.744" transform="rotate(-0 20.736 471.744)">Different assurance · API-equivalent cost estimates</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5279c28d7f">
+   <rect x="20.736" y="137.376" width="290.304" height="23.328"/>
+  </clipPath>
+  <clipPath id="pb3c5232e89">
+   <rect x="20.736" y="220.32" width="290.304" height="23.328"/>
+  </clipPath>
+  <clipPath id="p395d9e2e92">
+   <rect x="20.736" y="303.264" width="290.304" height="23.328"/>
+  </clipPath>
+ </defs>
+</svg>

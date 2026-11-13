@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="780" viewBox="0 0 480 780" role="img" aria-labelledby="title desc">
+<title id="title">Every handoff rebuilds understanding</title><desc id="desc">The original pipeline repeats reading the ticket, loading rules and inspecting the repository in each fresh context. A retained owner delegates only when the handoff earns its cost.</desc>
+<rect width="480" height="780" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M28 32H452" stroke="#b53c2f" stroke-width="3"/>
+<text x="28" y="70" class="kicker" text-anchor="start">01 / CONTEXT HAS A COST</text>
+<text x="28" y="116" class="title" text-anchor="start">The cost of starting over</text>
+<text x="28" y="153" class="small" text-anchor="start">Original pipeline · schematic</text>
+<rect x="28" y="180" width="424" height="66" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="208" class="label" text-anchor="start">Plan</text>
+<text x="44" y="233" class="small" text-anchor="start">Ticket + rules + repository orientation</text>
+<path d="M240 247V260" class="arrow"/>
+<rect x="28" y="262" width="424" height="66" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="290" class="label" text-anchor="start">Challenge</text>
+<text x="44" y="315" class="small" text-anchor="start">Ticket + rules + repository orientation</text>
+<path d="M240 329V342" class="arrow"/>
+<rect x="28" y="344" width="424" height="66" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="372" class="label" text-anchor="start">Implement</text>
+<text x="44" y="397" class="small" text-anchor="start">Ticket + rules + repository orientation</text>
+<path d="M240 411V424" class="arrow"/>
+<rect x="28" y="426" width="424" height="66" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="454" class="label" text-anchor="start">Review</text>
+<text x="44" y="479" class="small" text-anchor="start">Ticket + rules + repository orientation</text>
+<path d="M240 493V506" class="arrow"/>
+<rect x="28" y="508" width="424" height="66" rx="5" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="44" y="536" class="label" text-anchor="start">Prepare PR</text>
+<text x="44" y="561" class="small" text-anchor="start">Ticket + rules + repository orientation</text>
+<rect x="28" y="620" width="424" height="122" rx="5" fill="#f0eee5" stroke="#252521"/>
+<text x="44" y="651" class="label" text-anchor="start">Retained owner</text>
+<text x="44" y="681" class="body" text-anchor="start">Keep understanding. Delegate when</text>
+<text x="44" y="710" class="body" text-anchor="start">the handoff earns its cost.</text>
+</svg>
