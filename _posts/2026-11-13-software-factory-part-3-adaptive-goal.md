@@ -2,12 +2,12 @@
 title: "How I'd Build a Software Factory Today: Part III — Adaptive Goal"
 eyebrow: "The software factory · Part III"
 permalink: /software-factory-part-3-adaptive-goal/
-excerpt: "I built a pipeline that turned tickets into pull requests. Then I benchmarked it against simply asking the agent. Here's what survived."
+excerpt: "A ticket-to-PR pipeline got the job done. Benchmarking revealed what it cost—and led me to a more adaptive way to orchestrate the work."
 ---
 
 The most uncomfortable benchmark I've run this year was against a prompt that amounted to: implement this ticket.
 
-My carefully constructed pipeline lost. It took longer, cost more, and failed tasks that the vanilla agent completed. All those stages, all that context management, all those specialised subagents. Beaten by asking nicely.
+My carefully constructed pipeline lost. It took longer and failed tasks that the vanilla agent completed. The usage I could account for was expensive, too. All those stages, all that context management, all those specialised subagents. Beaten by asking nicely.
 
 Well, shit.
 
@@ -91,21 +91,15 @@ On Codex, vanilla and native goal both passed all four tasks. The pipeline passe
   <figcaption>The original four-task comparison: mean elapsed time per task and task contracts passed. One trial per task and configuration; compare variants within each harness.</figcaption>
 </figure>
 
-My earlier goal-loop controller also lost. Putting a loop around agents had not, by itself, made a better factory.
+> **A note on timing:** Models kept getting better throughout the year. In my experience, Opus 5.5 is far more capable than Opus 4.5, and OpenAI's models have advanced too. A workflow worth building in February may no longer earn its keep later in the year.
+>
+> Anthropic has since [recommended a single agent with skills for many commerce use cases](https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents). [The Decoder covered the guidance](https://the-decoder.de/weniger-ist-mehr-anthropic-raet-zum-einzelnen-ki-agent-statt-zu-vielen-subagenten/) in German. That matches much of what I've seen—but it's still worth evaluating your own tasks as the models change.
 
 ## The baseline had quietly become an orchestrator
 
 Meanwhile, I was using native `/goal` more and more.
 
-With the capabilities from Part II available, I could express a substantial delivery request in a few lines:
-
-```text
-Read this ticket and prepare a branch.
-Implement it using TDD.
-Review the result independently.
-Open a PR and hand it over
-with green CI.
-```
+With the capabilities from Part II available, a short request could already ask the agent to read a ticket, prepare a branch, implement with TDD, review the result, and open a PR with green CI.
 
 A native goal gives that request a persistent objective. The agent can bring in the relevant capabilities as it works. I no longer need to manually reconstruct the entire delivery procedure in the prompt.
 
@@ -160,6 +154,8 @@ A small permissions fix might be easy to code and have serious consequences. A b
 
 Implementation difficulty helps select the model and effort. Consequence risk helps select assurance. Treating them as one “task size” score would lose a distinction I care about.
 
+Take that permissions fix. The implementation might be local and straightforward, so it doesn't necessarily need the strongest model. But getting permissions wrong can have serious consequences, so I'd still want independent review. For a routine, low-risk change, the main thread might implement it directly and rely on the required checks without a separate review.
+
 The defaults are configurable. So is placement. If the current thread already has the appropriate model and effort, it can implement directly. If the work needs a stronger model, it can delegate on that route. A cheaper model is useful when the savings repay the handoff; for a tiny change, spawning another agent can cost more than simply finishing it.
 
 Independent parts can run concurrently when their interfaces are settled and their edits won't collide. Coupled work stays together. The current design also supports isolated ticket workers and an integration branch, but I don't yet have a comparative benchmark establishing savings from that arrangement.
@@ -198,31 +194,27 @@ That stopping rule is a trade-off. A consequential change in scope can require b
 
 After the initial experiments, I kept working on the overhead. One change let a capable main thread coordinate verification and review directly, while keeping the reviewers independent. That removed coordinator hops without removing fresh eyes.
 
-The [November 3 workflow benchmark](https://github.com/BjRo/darrow/pull/293) tested that updated implementation against archived vanilla controls on four different calibration tasks: a Click bug fix, an Express feature, a helper refactor, and a readiness-skill prose edit. Each task ran twice for the updated implementation. The table shows the mean per workflow across those tasks, with each task weighted equally:
+The [November 3 workflow benchmark](https://github.com/BjRo/darrow/pull/293) tested that updated implementation against archived vanilla controls on four different calibration tasks: a Click bug fix, an Express feature, a helper refactor, and a readiness-skill prose edit. Each task ran twice for the updated implementation. Each task has equal weight in the mean results below.
 
-| Measure | Vanilla | Updated adaptive-goal | Ratio |
-| --- | ---: | ---: | ---: |
-| Estimated model cost | $0.088 | $0.218 | 2.47× |
-| Elapsed time | 84.5s | 163.6s | 1.94× |
-| Total tokens | 191,672 | 755,135 | 3.94× |
+The task sets and configurations differ from the initial pipeline benchmark, so the two experiments don't measure a direct before-and-after improvement.
 
 <figure>
   <picture>
     <source media="(max-width: 600px)" srcset="/assets/images/adaptive-goal-benchmark-mobile.svg" />
-    <img src="/assets/images/adaptive-goal-benchmark.svg" alt="November 3 workflow calibration: updated adaptive-goal averaged 2.47 times vanilla estimated model cost, 1.94 times elapsed time, and 3.94 times total tokens. Four tasks ran twice each; vanilla controls were historical." />
+    <img src="/assets/images/adaptive-goal-benchmark.svg" alt="November 3 workflow calibration, mean per workflow: estimated model cost rose from 0.088 to 0.218 US dollars, or 2.47 times; elapsed time from 84.5 to 163.6 seconds, or 1.94 times; total tokens from 191,672 to 755,135, or 3.94 times. Four tasks ran twice each; vanilla controls were historical." />
   </picture>
-  <figcaption>Means across four equally weighted calibration tasks, with two runs per task. Vanilla controls came from the preceding day. Costs are API-equivalent estimates, not subscription charges; the workflows provide different assurance.</figcaption>
+  <figcaption>Means across four equally weighted calibration tasks, with two runs per task. Vanilla controls came from the preceding day. Costs are API-equivalent estimates, not subscription charges; the workflows provide different assurance. <strong>These runs covered the engineering work; they didn't include committing, opening a PR, or waiting for CI.</strong></figcaption>
 </figure>
 
 Across those tasks, the updated workflow averaged about **two and a half times the estimated dollar cost and twice the elapsed time** of the historical vanilla controls. Those are ratios of the overall mean values, not the overhead for every individual task. The two passes came out at 2.72× and 2.22× the historical vanilla cost. Tokens increased by nearly four times, but many were cached input, so the dollar ratio was lower.
 
-These are exploratory results: four tasks, with two runs each, compared against vanilla controls from the previous day. The workflows used different levels of assurance, and the dollar figures are estimates based on API pricing. All eight adaptive-goal runs passed their checks, but that doesn't establish equal quality or tell us how these ratios will hold across other work.
+These are exploratory results: four tasks, with two runs each, compared against vanilla controls from the previous day using an earlier runtime profile. The workflows used different levels of assurance, and the dollar figures are estimates based on API pricing. All eight adaptive-goal runs passed their checks, but that doesn't establish equal quality or tell us how these ratios will hold across other work.
 
-Still, I feel more comfortable with these numbers because I can clearly describe the trade-offs of my approach to others.
+Overall, I'm content with where this has landed. I have a feel for the overhead this workflow adds and can explain what I'm getting for it: a delivery process that makes decisions about the work, brings in the capabilities I ask for, and handles selected review and repair without me guiding every step. That also makes it easier to describe the trade-offs to others.
 
-## What I'm willing to pay for
+## A primitive for the factory
 
-[Darrow](https://github.com/BjRo/darrow) is my personal playground for software factory ideas. Some of the things I try there might be a bit outlandish for others: using Python for plugin scripting, for example, or researching the effects of requiring more than 95% code and branch coverage. Exploring those ideas has been immensely useful for wrapping my head around how the pieces of a factory fit together.
+[Darrow](https://github.com/BjRo/darrow) is my personal playground for software factory ideas. Some of the things I try there might be a bit outlandish for others: using Python for plugin scripting, for example, or researching the effects of requiring 95% or higher code and branch coverage. Exploring those ideas has been immensely useful for wrapping my head around how the pieces of a factory fit together.
 
 [Adaptive-goal is part of Darrow](https://github.com/BjRo/darrow/tree/main/plugins/orchestration/darrow-adaptive-goal). It's useful to me because it packages how I want bounded work carried through delivery: explicit acceptance, selected readiness, deliberate implementation placement, independent assurance where required, and a finite repair budget.
 
@@ -247,8 +239,6 @@ The request still defines the outcome: implement a change, prepare a pull reques
   </picture>
   <figcaption>From a fixed procession of stages to an approach that adapts context, implementation, assurance, and repair to the work.</figcaption>
 </figure>
-
-Overall, I'm content with where this has landed. I have a feel for the overhead orchestration adds and, just as importantly, I can explain what I'm getting for it: a delivery process that makes decisions about the work, brings in the capabilities I ask for, and handles selected review and repair without me guiding every step.
 
 The capabilities used inside that process come with their own costs. The more work I ask the agent to do, the more tokens I should expect it to use. A principles-first way of working inspired by [Lauren Tan's (poteto) pstack](https://github.com/cursor/plugins/blob/main/pstack/README.md), for example, asks the agent to load and apply additional engineering guidance. That can be worth paying for, but I wouldn't expect it to be free. The actual cost depends on the work, the models, and what the agent does with those instructions, so I'd measure it against the setup I intend to use.
 

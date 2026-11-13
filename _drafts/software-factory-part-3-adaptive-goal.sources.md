@@ -3,7 +3,7 @@ published: false
 title: "Editorial evidence — Adaptive Goal"
 ---
 
-Research notes for `software-factory-part-3-adaptive-goal.md`. This is editorial material, excluded from publication.
+Research notes for `_posts/2026-11-13-software-factory-part-3-adaptive-goal.md`. This is editorial material, excluded from publication.
 
 Researched November 13, 2026. Darrow checkout: `de1809c8bcd2dc29ce8d664fbf4ba8b36a259e89`. No Darrow files changed. User confirmed use of the latest documented benchmark figures.
 
@@ -25,7 +25,7 @@ The opening and phrasing are drafted in the author's voice using the supplied re
 - **Readiness/review:** These are selected capabilities, rather than mandatory product-specific stages in every goal. Routine risk can omit independent review; explicit user requirements can strengthen assurance.
 - **Ownership:** Current native goal ownership remains in the main thread. Historical separate-owner and goal-loop-controller experiments must not be described as the current architecture.
 - **Repair:** The current default is two implementation repair attempts total, shared across providers and findings. Follow-up stays within findings and repair-caused regressions; important scope changes can require broader reassessment.
-- **Quality:** Passing original checks is not evidence of equivalent quality. Click and go-git supplemental probes expose different defects on different candidates. Both belong in an honest treatment.
+- **Quality:** Passing original checks is not evidence of equivalent quality. Click and go-git supplemental probes expose different defects on different candidates. The author chose to cut the detailed examples from the post; retain them here as research context.
 
 ## Source map
 
@@ -82,4 +82,4 @@ Each illustration has a `-mobile.svg` variant selected through a responsive `pic
 
 ## Publication notes
 
-The draft remains in `_drafts`; no publication, commit or push performed. It is approximately 3,200 words including front matter and captions. The story could be shortened by moving some benchmark caveats to a footnote, but retain the sample size, different-assurance distinction, later-version limitation, and go-git counterexample.
+The post lives in `_posts`. The author chose to remove the detailed Click and go-git examples from the post. Keep the benchmark sample size, assurance distinction, and limits clear; don't restore the cut material without a new editorial reason.
