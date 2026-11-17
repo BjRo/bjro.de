@@ -49,6 +49,14 @@ That matches what I see. An agent will solve the problem in front of it in whate
 
 Neal also compared today's frontier models with the [Dreyfus model of skill acquisition](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), which describes five stages people go through on the way from novice to expert. According to Neal, agents are currently at the second stage, **advanced beginner**. An advanced beginner recognises situations they've seen before, but treats every aspect of a situation as equally important and doesn't see the big picture yet. Planning deliberately, setting priorities, and choosing what to focus on only come one stage later, with competence. I find that fascinating, and it lines up completely with what I'm seeing. They can copy work and recombine existing work. They can't zoom out and reason about that work.
 
+<figure>
+  <picture>
+    <source media="(max-width: 600px)" srcset="/assets/images/entropy-machines-dreyfus-mobile.svg" />
+    <img src="/assets/images/entropy-machines-dreyfus.svg" alt="The five Dreyfus stages as a staircase: novice, advanced beginner, competent, proficient, expert. Today's coding agents are marked at stage two, advanced beginner, which spots familiar situations but misses the big picture. Planning and setting priorities only arrive at stage three, competent." />
+  </picture>
+  <figcaption>One step short of planning and prioritising on their own.</figcaption>
+</figure>
+
 Yes, with a lot of agents and a lot of money you can brute-force a problem. Many agents together can find new solutions by trying and recombining. But they're still bound by how the technology underneath works. LLMs have limited attention. They lose focus when there are too many things to pay attention to. They lose focus when their instructions conflict. All of that shows up directly in the result.
 
 Does that mean progress has stalled? No. The benchmarks say otherwise. [METR measures](https://metr.org/blog/2026-01-29-time-horizon-1-1/) the length of software tasks frontier models can complete, and that length keeps doubling every few months. That's an exponential curve, and I'm not going to argue with it.
@@ -108,13 +116,21 @@ The agent did most of the typing. The judgement about which constraints to set a
 
 And guess what? At the time of writing, that 10,000-line file is down to fewer than 3,000 lines. The test and eval suites still pass, and we haven't found any regressions. The difference is that the structure is now much better, and Tach and mypy fail the build if anyone, human or agent, brings the old mess back.
 
+<figure>
+  <picture>
+    <source media="(max-width: 600px)" srcset="/assets/images/entropy-machines-ratchet-mobile.svg" />
+    <img src="/assets/images/entropy-machines-ratchet.svg" alt="Left, illustrative: exclusion lists for Tach and mypy start with every existing violation and step down slice by slice, with a cap that only moves down. Right: the largest file went from more than 10,000 lines to under 3,000 lines a day and a half later, with the test and eval suites green." />
+  </picture>
+  <figcaption>The agent does the work. The ratchet decides which direction it's allowed to go.</figcaption>
+</figure>
+
 That's amazing. Think about it. Not long ago this would have taken very proficient people a long time. Now you can do it in a day and a half of focused work, if you know the tools and the approaches.
 
 It turns out this is a critical part of a software factory, too. When advanced folks talk about deterministic tooling, they don't stop at unit tests and simple linters like ESLint or RuboCop. They go way further than that. They use tools that protect the design of the code and help you shepherd it, or garden it, for lack of a better metaphor. Exhibit A is the architecture linter you just saw, but the sky is the limit here. Property-based testing, mutation testing, and even formal verification used to be too much effort for most teams. In this new age, they're becoming much more reachable, and much more useful. Matt showed examples of the first two in his cohort. Lauren Tan, who I'll come back to in a moment, mentions [TLA+](https://lamport.azurewebsites.net/tla/tla.html) and [Lean](https://lean-lang.org/) in her latest talk.
 
 The important point is that agents need constraints to produce the right software over time. They don't come up with those constraints themselves. That's your job. If you're trying to set up a software factory without them, good luck, my friends. It's going to be tough.
 
-And if you do have those constraints? Look at what Lauren Tan, known as poteto, shows in her talk [How I Shipped 2000 PRs Last Month](https://www.youtube.com/watch?v=NjoZoUm85x0) about her work on Grok Bot at SpaceXSI. By her own account, she ships around 2,000 PRs a month. And that number keeps growing. In her more recent AI Engineer talk, [All Code Is Slop (Except Mine)](https://ai.engineer/talks/O_zcc6Xl12g-all-code-is-slop-except-mine), she was at over 3,000 a month. It's incredible. And nobody reads 3,000 PRs a month line by line. On reading code, she's closer to the dark-factory end than I am. But look at what she puts in its place. She's clear that verification makes that volume possible, not the number of agents. Her setup is heavily constrained, not hands-off.
+And if you do have those constraints? Look at what Lauren Tan, known as poteto, shows in her talk [How I Shipped 2000 PRs Last Month](https://www.youtube.com/watch?v=NjoZoUm85x0) about her work on Grok Bot at SpaceXSI. By her own account, she ships around 2,000 PRs a month. And that number keeps growing. In her more recent AI Engineer talk, [All Code Is Slop (Except Mine)](https://ai.engineer/talks/O_zcc6Xl12g-all-code-is-slop-except-mine), she was at over 3,000 a month. It's incredible. And nobody reads 3,000 PRs a month line by line. On reading code, she's closer to the dark-factory end than I am. But look at what she puts in its place. She's clear that verification makes that volume possible, not the number of agents. And her team changed the structure of the codebase to make it friendlier to agents and to verification. Lint rules and a dependency analyser enforce boundaries. The guidance lives in lint messages the agent sees exactly when it breaks a rule. Recurring review comments turn into checks, or into APIs that make the mistake hard to express. Agents can drive the running app and capture screenshots as evidence. Her setup is heavily constrained, not hands-off.
 
 ## Two ends of a spectrum
 
@@ -123,6 +139,14 @@ So we end up with a spectrum. At one end are the people who want to be completel
 Everything I've seen this year, and in the years before, indicates that the latter group is more spot on.
 
 There's a second question hiding in there, and people tend to mix the two up. Investing in the environment is one thing. Whether a human still understands the code is another. The best dark-factory builders invest heavily, and on that point we agree. Where I part ways with them is the second question. As long as humans are accountable for what ships, someone needs to understand it. And the tool from my client work shows that tests and a spec alone don't keep a design healthy.
+
+<figure>
+  <picture>
+    <source media="(max-width: 600px)" srcset="/assets/images/entropy-machines-two-questions-mobile.svg" />
+    <img src="/assets/images/entropy-machines-two-questions.svg" alt="A two-by-two map. Horizontal: investment in the agent's environment. Vertical: whether a human understands the code. Low investment without understanding is vibe coding, including copy-paste dark factories. Low investment while reading the code is expecting magic. High investment without anyone reading the code is the serious dark factory. High investment with a human who understands what ships is where I land." />
+  </picture>
+  <figcaption>The hands-off debate is really two debates.</figcaption>
+</figure>
 
 Agents aren't magical creatures. They're tools with limits and trade-offs, and you have to use them properly. I don't think that's pessimistic. Left alone, they're entropy machines. With the right constraints around them, they took a 10,000-line file nobody dared to touch down to under 3,000 lines in a day and a half, with a structure the build now enforces. That's the reason I'm building a software factory in the first place. Repository guidance, capabilities, orchestration, and deterministic checks are how I give agents the constraints they won't set for themselves.
 

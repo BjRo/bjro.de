@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+<title id="title">Two questions, not one</title><desc id="desc">A two-by-two map. The horizontal axis is how much you invest in the agent's environment: guidance, constraints, verification. The vertical axis is whether a human understands the code. Low investment and nobody understanding the code is vibe coding, including copy-paste dark factories. Low investment while reading the code is expecting magic. High investment without anyone reading the code is the serious dark factory. High investment and a human who understands what ships is where the author lands.</desc>
+<rect width="960" height="660" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.desc{font-size:16px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M40 32H920" stroke="#b53c2f" stroke-width="3"/>
+<text x="40" y="70" class="kicker" text-anchor="start">WHERE THE CAMPS DISAGREE</text>
+<text x="40" y="118" class="title" text-anchor="start">Two questions, not one</text>
+<rect x="200" y="160" width="350" height="190" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="224" y="208" class="label" text-anchor="start">Expecting magic</text>
+<text x="224" y="240" class="small" text-anchor="start">Reads the code, but gives the</text>
+<text x="224" y="266" class="small" text-anchor="start">agent little to work with</text>
+<rect x="550" y="160" width="350" height="190" rx="0" fill="#b53c2f" stroke="#d8d5ca"/>
+<text x="574" y="208" class="label inv" text-anchor="start">Where I land</text>
+<text x="574" y="240" class="small inv" text-anchor="start">Heavy constraints, and a human</text>
+<text x="574" y="266" class="small inv" text-anchor="start">who understands what ships</text>
+<rect x="200" y="350" width="350" height="190" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="224" y="398" class="label" text-anchor="start">Vibe coding</text>
+<text x="224" y="430" class="small" text-anchor="start">Fast start, entropy later.</text>
+<text x="224" y="456" class="small" text-anchor="start">Also: copy-paste dark factories</text>
+<rect x="550" y="350" width="350" height="190" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="574" y="398" class="label" text-anchor="start">Serious dark factory</text>
+<text x="574" y="430" class="small" text-anchor="start">Heavy specs and verification,</text>
+<text x="574" y="456" class="small" text-anchor="start">nobody reads the code</text>
+<path d="M200 562H900" class="arrow"/>
+<text x="550" y="592" class="small" text-anchor="middle">Investment in the agent's environment</text>
+<text x="200" y="592" class="desc" text-anchor="start">Less</text>
+<text x="900" y="592" class="desc" text-anchor="end">More</text>
+<path d="M178 540V160" class="arrow"/>
+<text x="0" y="0" class="small" text-anchor="middle" transform="translate(156 350) rotate(-90)">A human understands the code</text>
+<text x="166" y="540" class="desc" text-anchor="end">No</text>
+<text x="166" y="176" class="desc" text-anchor="end">Yes</text>
+<text x="40" y="640" class="small" text-anchor="start">I agree with the best dark-factory builders on the first axis, not on the second.</text>
+</svg>

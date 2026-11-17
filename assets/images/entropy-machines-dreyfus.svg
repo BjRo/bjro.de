@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Where agents sit today</title><desc id="desc">The five Dreyfus stages of skill acquisition as a staircase: novice, advanced beginner, competent, proficient, expert. Today's coding agents are marked at stage two, advanced beginner: they spot familiar situations but miss the big picture. Planning and setting priorities only arrive at stage three.</desc>
+<rect width="960" height="560" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.desc{font-size:16px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<path d="M40 32H920" stroke="#b53c2f" stroke-width="3"/>
+<text x="40" y="70" class="kicker" text-anchor="start">THE DREYFUS MODEL</text>
+<text x="40" y="118" class="title" text-anchor="start">Where agents sit today</text>
+<rect x="40" y="350" width="168" height="150" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="56" y="380" class="kicker" text-anchor="start">01</text>
+<text x="56" y="408" class="name" text-anchor="start">Novice</text>
+<text x="56" y="436" class="desc" text-anchor="start">Follows rules</text>
+<text x="56" y="458" class="desc" text-anchor="start">rigidly</text>
+<rect x="216" y="310" width="168" height="190" rx="5" fill="#b53c2f" stroke="#b53c2f"/>
+<text x="232" y="340" class="kicker inv" text-anchor="start">02</text>
+<text x="232" y="368" class="name inv" text-anchor="start">Advanced</text>
+<text x="232" y="392" class="name inv" text-anchor="start">beginner</text>
+<text x="232" y="420" class="desc inv" text-anchor="start">Spots familiar</text>
+<text x="232" y="442" class="desc inv" text-anchor="start">situations, but</text>
+<text x="232" y="464" class="desc inv" text-anchor="start">no big picture</text>
+<rect x="392" y="270" width="168" height="230" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="408" y="300" class="kicker" text-anchor="start">03</text>
+<text x="408" y="328" class="name" text-anchor="start">Competent</text>
+<text x="408" y="356" class="desc" text-anchor="start">Plans and sets</text>
+<text x="408" y="378" class="desc" text-anchor="start">priorities</text>
+<rect x="568" y="230" width="168" height="270" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="584" y="260" class="kicker" text-anchor="start">04</text>
+<text x="584" y="288" class="name" text-anchor="start">Proficient</text>
+<text x="584" y="316" class="desc" text-anchor="start">Sees the whole</text>
+<text x="584" y="338" class="desc" text-anchor="start">situation</text>
+<rect x="744" y="190" width="168" height="310" rx="5" fill="#f0eee5" stroke="#d8d5ca"/>
+<text x="760" y="220" class="kicker" text-anchor="start">05</text>
+<text x="760" y="248" class="name" text-anchor="start">Expert</text>
+<text x="760" y="276" class="desc" text-anchor="start">Acts from deep</text>
+<text x="760" y="298" class="desc" text-anchor="start">experience</text>
+<text x="300" y="266" class="kicker" text-anchor="middle">AGENTS TODAY</text>
+<path d="M300 276V302" class="arrow"/>
+<text x="40" y="540" class="small" text-anchor="start">Stages: Dreyfus &amp; Dreyfus. Placement of today's agents: Neal Ford, code.talks 2026.</text>
+</svg>
