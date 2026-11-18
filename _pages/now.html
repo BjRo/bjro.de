@@ -9,33 +9,31 @@ nav_section: now
   {% include bio.html %}
 
   <main>
-    <div class="now-meta"><span class="dot"></span> Now · a /now page · last updated {{ site.now.updated | default: "July 11, 2026" }}</div>
+    <div class="now-meta"><span class="dot"></span> Now · a /now page · last updated {{ site.now.updated | default: "November 18, 2026" }}</div>
     <h1>What I&rsquo;m working on, right this quarter.</h1>
     <p class="preface">Inspired by Derek Sivers&rsquo; <a href="https://nownownow.com/about">/now</a> convention. A standing answer to &ldquo;what are you up to these days?&rdquo;</p>
     <hr class="thin" />
 
     <section class="now-section">
       <div class="label">Working with</div>
-      <p>Engineering teams adopting agentic workflows — from Hamburg, with clients across Europe.</p>
-      <p>Giving trainings as part of <a href="https://www.hackersandwizards.dev/">Hackers &amp; Wizards</a>.</p>
-      <p>Booked out for longer-term client engagements until the end of 2026.</p>
-      <p class="sub"><a href="mailto:{{ site.author.email }}">Get in touch →</a></p>
-    </section>
-
-    <section class="now-section">
-      <div class="label">Writing</div>
-      <p>Documentation of thoughts and experiments around components of a dark(-ish) software factory.</p>
+      <ul class="now-list">
+        <li>Engineering teams across Europe that are adopting agentic workflows.</li>
+        <li><a href="https://www.hackersandwizards.dev/">Hackers &amp; Wizards</a>, where I give trainings.</li>
+      </ul>
+      <p class="sub">Booked out for longer-term engagements until the end of 2026. <a href="mailto:{{ site.author.email }}">Get in touch →</a></p>
     </section>
 
     <section class="now-section">
       <div class="label">Reading</div>
-      <p>Stephen Fry&rsquo;s retelling of Homer&rsquo;s <em>Odyssey</em> (and looking forward to the movie). Papers on agentic engineering.</p>
+      <p>What I&rsquo;m reading right now, what&rsquo;s next on the pile, and what I thought of the last few books all live on <a href="https://www.goodreads.com/user/show/6590000-bjoern-rochel">Goodreads</a>. It&rsquo;s more up to date than this page will ever be.</p>
     </section>
 
     <section class="now-section">
       <div class="label">Building</div>
-      <p>Darrow — a re-usable Software Factory on top of Claude Code and Codex.</p>
-      <p>Antonego — a way to evaluate agentic coding pipelines.</p>
+      <ul class="now-list">
+        <li><a href="https://github.com/BjRo/darrow">Darrow</a> — a re-usable Software Factory on top of Claude Code and Codex.</li>
+        <li><a href="https://github.com/BjRo/sevro">Sevro</a> — an eval runner for agentic coding capabilities.</li>
+      </ul>
     </section>
   </main>
 
