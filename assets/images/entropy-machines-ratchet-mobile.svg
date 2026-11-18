@@ -1,35 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="940" viewBox="0 0 480 940" role="img" aria-labelledby="title desc">
-<title id="title">Exclusions only go down</title><desc id="desc">Left: an illustrative staircase of exclusion lists for Tach and mypy. Every existing violation starts on the list, no new exclusions are allowed, and each slice of work lowers the cap. Right: the largest file went from more than 10,000 lines to under 3,000 lines in a day and a half, with the test and eval suites green.</desc>
-<rect width="480" height="940" fill="#fffdf8"/>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.desc{font-size:16px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="790" viewBox="0 0 480 790" role="img" aria-labelledby="title desc">
+<title id="title">Exclusions only go down</title><desc id="desc">Left, illustrative: exclusion lists for Tach and mypy. Every existing violation starts on the list, and a cap that fails the build only moves down, slice by slice. Right: the largest file went from more than 10,000 lines to under 3,000 lines a day and a half later.</desc>
+<rect width="480" height="790" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.small{font-size:18px;fill:#68685f}.desc{font-size:17px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.redtext{fill:#b53c2f}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
 <path d="M28 32H452" stroke="#b53c2f" stroke-width="3"/>
 <text x="28" y="70" class="kicker" text-anchor="start">THE RATCHET</text>
 <text x="28" y="118" class="title" text-anchor="start">Exclusions only go down</text>
 <text x="28" y="176" class="name" text-anchor="start">Exclusion lists (Tach, mypy)</text>
 <text x="28" y="202" class="desc" text-anchor="start">Illustrative. Every existing violation</text>
 <text x="28" y="224" class="desc" text-anchor="start">starts on the list.</text>
-<rect x="44" y="270" width="48" height="216" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<rect x="114" y="308" width="48" height="178" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<rect x="184" y="346" width="48" height="140" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<rect x="254" y="384" width="48" height="102" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<rect x="324" y="420" width="48" height="66" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<rect x="394" y="456" width="48" height="30" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<path d="M36 270 H103 V308 H173 V346 H243 V384 H313 V420 H383 V456 H450" fill="none" stroke="#b53c2f" stroke-width="3"/>
-<path d="M36 486H450" stroke="#68685f" stroke-width="1"/>
-<text x="206" y="262" class="desc" text-anchor="start" style="fill:#b53c2f">The cap moves down, never up</text>
-<text x="68" y="512" class="desc" text-anchor="middle">Start</text>
-<text x="243" y="512" class="desc" text-anchor="middle">slice by slice →</text>
-<text x="418" y="512" class="desc" text-anchor="middle">Today</text>
-<path d="M28 548H452" stroke="#d8d5ca"/>
-<text x="28" y="596" class="name" text-anchor="start">Largest file</text>
-<text x="28" y="622" class="desc" text-anchor="start">Lines of code</text>
-<text x="28" y="662" class="desc" text-anchor="start">Before</text>
-<rect x="28" y="672" width="400" height="52" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
-<text x="44" y="708" class="big" text-anchor="start">10,000+</text>
-<text x="28" y="766" class="desc" text-anchor="start">1.5 days later</text>
-<rect x="28" y="776" width="116" height="52" rx="3" fill="#b53c2f" stroke="#b53c2f"/>
-<text x="160" y="812" class="big" text-anchor="start" style="fill:#b53c2f">&lt; 3,000</text>
-<text x="28" y="872" class="desc" text-anchor="start">Test and eval suites stayed green.</text>
-<text x="28" y="896" class="desc" text-anchor="start">Tach and mypy now fail the build</text>
-<text x="28" y="920" class="desc" text-anchor="start">on new violations.</text>
+<rect x="28" y="245" width="16" height="16" rx="2" fill="#d8d5ca" stroke="#d8d5ca"/>
+<text x="52" y="258" class="desc" text-anchor="start">Exclusions</text>
+<path d="M158 253H186" stroke="#b53c2f" stroke-width="3"/>
+<text x="194" y="258" class="desc" text-anchor="start">Cap: the build fails above it</text>
+<rect x="44" y="290" width="48" height="166" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<rect x="114" y="320" width="48" height="136" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<rect x="184" y="350" width="48" height="106" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<rect x="254" y="378" width="48" height="78" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<rect x="324" y="406" width="48" height="50" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<rect x="394" y="434" width="48" height="22" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<path d="M36 284 H103 V314 H173 V344 H243 V372 H313 V400 H383 V428 H450" fill="none" stroke="#b53c2f" stroke-width="3"/>
+<path d="M36 456H450" stroke="#68685f" stroke-width="1"/>
+<text x="68" y="484" class="desc" text-anchor="middle">Start</text>
+<text x="243" y="484" class="desc" text-anchor="middle">slice by slice →</text>
+<text x="418" y="484" class="desc" text-anchor="middle">Today</text>
+<path d="M28 512H452" stroke="#d8d5ca"/>
+<text x="28" y="556" class="name" text-anchor="start">Largest file</text>
+<text x="28" y="580" class="desc" text-anchor="start">Lines of code</text>
+<text x="28" y="620" class="desc" text-anchor="start">Before</text>
+<rect x="28" y="630" width="290" height="48" rx="3" fill="#d8d5ca" stroke="#d8d5ca"/>
+<text x="332" y="664" class="big" text-anchor="start">10,000+</text>
+<text x="28" y="716" class="desc" text-anchor="start">A day and a half later</text>
+<rect x="28" y="726" width="84" height="48" rx="3" fill="#b53c2f" stroke="#b53c2f"/>
+<text x="126" y="760" class="big redtext" text-anchor="start">&lt; 3,000</text>
 </svg>

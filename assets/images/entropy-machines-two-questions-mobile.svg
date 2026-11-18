@@ -1,32 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="650" viewBox="0 0 480 650" role="img" aria-labelledby="title desc">
-<title id="title">Two questions, not one</title><desc id="desc">A two-by-two map. The horizontal axis is how much you invest in the agent's environment: guidance, constraints, verification. The vertical axis is whether a human understands the code. Low investment and nobody understanding the code is vibe coding, including copy-paste dark factories. Low investment while reading the code is expecting magic. High investment without anyone reading the code is the serious dark factory. High investment and a human who understands what ships is where the author lands.</desc>
-<rect width="480" height="650" fill="#fffdf8"/>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.body{font-size:21px}.small{font-size:18px;fill:#68685f}.desc{font-size:16px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="610" viewBox="0 0 480 610" role="img" aria-labelledby="title desc">
+<title id="title">Two questions, not one</title><desc id="desc">A two-by-two map. Horizontal: investment in the agent's environment, from less to more. Vertical: whether a human owns the design. Low investment, nobody owns the design: vibe coding, including copy-paste dark factories. Low investment, a human owns the design: expecting magic. High investment, behaviour verified but nobody owns the internal design: the serious dark factory. High investment, structure constrained and a human owns the design: where I land.</desc>
+<rect width="480" height="610" fill="#fffdf8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#68685f" stroke-width="1.5"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#252521}.label{font-size:23px;font-weight:700}.name{font-size:20px;font-weight:700}.small{font-size:18px;fill:#68685f}.desc{font-size:17px;fill:#68685f}.kicker{font-size:17px;letter-spacing:2px;fill:#b53c2f}.title{font-family:Georgia,serif;font-size:36px}.big{font-family:Georgia,serif;font-size:30px}.redtext{fill:#b53c2f}.inv{fill:#fffdf8}.arrow{fill:none;stroke:#68685f;stroke-width:2;marker-end:url(#arrow)}</style>
 <path d="M28 32H452" stroke="#b53c2f" stroke-width="3"/>
 <text x="28" y="70" class="kicker" text-anchor="start">WHERE THE CAMPS DISAGREE</text>
 <text x="28" y="118" class="title" text-anchor="start">Two questions, not one</text>
-<rect x="72" y="150" width="190" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
-<text x="86" y="184" class="name" text-anchor="start">Expecting magic</text>
-<text x="86" y="212" class="desc" text-anchor="start">Reads the code,</text>
-<text x="86" y="234" class="desc" text-anchor="start">weak environment</text>
-<rect x="262" y="150" width="190" height="170" rx="0" fill="#b53c2f" stroke="#d8d5ca"/>
-<text x="276" y="184" class="name inv" text-anchor="start">Where I land</text>
-<text x="276" y="212" class="desc inv" text-anchor="start">Constraints plus</text>
-<text x="276" y="234" class="desc inv" text-anchor="start">understanding</text>
-<rect x="72" y="320" width="190" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
-<text x="86" y="354" class="name" text-anchor="start">Vibe coding</text>
-<text x="86" y="382" class="desc" text-anchor="start">Fast start,</text>
-<text x="86" y="404" class="desc" text-anchor="start">entropy later</text>
-<rect x="262" y="320" width="190" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
-<text x="276" y="354" class="name" text-anchor="start">Serious dark</text>
-<text x="276" y="376" class="name" text-anchor="start">factory</text>
-<text x="276" y="404" class="desc" text-anchor="start">Heavy verification,</text>
-<text x="276" y="426" class="desc" text-anchor="start">nobody reads code</text>
-<path d="M72 508H452" class="arrow"/>
-<text x="262" y="534" class="desc" text-anchor="middle">Investment in the environment</text>
-<path d="M54 490V150" class="arrow"/>
-<text x="0" y="0" class="desc" text-anchor="middle" transform="translate(38 320) rotate(-90)">Human understands the code</text>
-<text x="28" y="576" class="desc" text-anchor="start">I agree with the best dark-factory</text>
-<text x="28" y="600" class="desc" text-anchor="start">builders on the first axis,</text>
-<text x="28" y="624" class="desc" text-anchor="start">not on the second.</text>
+<rect x="76" y="150" width="188" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="90" y="184" class="name" text-anchor="start">Expecting magic</text>
+<text x="90" y="212" class="desc" text-anchor="start">Design lives in</text>
+<text x="90" y="234" class="desc" text-anchor="start">their head</text>
+<rect x="264" y="150" width="188" height="170" rx="0" fill="#b53c2f" stroke="#d8d5ca"/>
+<text x="278" y="184" class="name inv" text-anchor="start">Where I land</text>
+<text x="278" y="212" class="desc inv" text-anchor="start">Structure constrained,</text>
+<text x="278" y="234" class="desc inv" text-anchor="start">design owned</text>
+<rect x="76" y="320" width="188" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="90" y="354" class="name" text-anchor="start">Vibe coding</text>
+<text x="90" y="382" class="desc" text-anchor="start">Fast start,</text>
+<text x="90" y="404" class="desc" text-anchor="start">entropy later</text>
+<rect x="264" y="320" width="188" height="170" rx="0" fill="#fffdf8" stroke="#d8d5ca"/>
+<text x="278" y="354" class="name" text-anchor="start">Serious dark</text>
+<text x="278" y="376" class="name" text-anchor="start">factory</text>
+<text x="278" y="404" class="desc" text-anchor="start">Behaviour verified,</text>
+<text x="278" y="426" class="desc" text-anchor="start">nobody owns design</text>
+<path d="M76 508H452" class="arrow"/>
+<text x="264" y="566" class="desc" text-anchor="middle">Investment in the agent's environment</text>
+<text x="76" y="536" class="desc" text-anchor="start">Less</text>
+<text x="452" y="536" class="desc" text-anchor="end">More</text>
+<path d="M58 490V150" class="arrow"/>
+<text x="0" y="0" class="desc" text-anchor="middle" transform="translate(38 320) rotate(-90)">A human owns the design</text>
+<text x="50" y="490" class="desc" text-anchor="end">No</text>
+<text x="50" y="166" class="desc" text-anchor="end">Yes</text>
 </svg>
