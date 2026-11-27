@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="710" viewBox="0 0 900 710" role="img" aria-labelledby="title desc">
+<title id="title">From recipe intents to available capabilities</title>
+<desc id="desc">Adaptive Goal coordinates a recipe with three intents. Dotted arrows lead from each intent to a corresponding available capability; the selection is not a fixed call.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#64748b" stroke-width="1.5"/></marker></defs>
+<rect width="900" height="710" fill="#fffdf8" rx="20"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="#1f2937">
+<text x="45" y="60" font-size="32" font-weight="700">A recipe connects intent to capability</text>
+<text x="46" y="94" font-size="19" fill="#526072">The work is coordinated by Adaptive Goal</text>
+<rect x="45" y="125" width="810" height="64" rx="15" fill="#e8f3ff" stroke="#4c8cc7" stroke-width="2"/>
+<text x="450" y="165" text-anchor="middle" font-size="23" font-weight="700">Adaptive Goal</text>
+<text x="75" y="237" font-size="18" font-weight="700" fill="#657080">RECIPE SAYS</text>
+<text x="535" y="237" font-size="18" font-weight="700" fill="#657080">AVAILABLE CAPABILITY</text>
+<g font-size="21" font-weight="600">
+<rect x="45" y="265" width="330" height="88" rx="15" fill="#fff" stroke="#8b9aa8" stroke-width="2"/><text x="70" y="318">Read the ticket</text>
+<rect x="45" y="380" width="330" height="88" rx="15" fill="#fff" stroke="#8b9aa8" stroke-width="2"/><text x="70" y="433">Use red/green TDD</text>
+<rect x="45" y="495" width="330" height="88" rx="15" fill="#fff" stroke="#8b9aa8" stroke-width="2"/><text x="70" y="548">Open or reuse a PR</text>
+<rect x="525" y="265" width="330" height="88" rx="15" fill="#f1f8ee" stroke="#79a56d" stroke-width="2"/><text x="550" y="318">Ticket reading</text>
+<rect x="525" y="380" width="330" height="88" rx="15" fill="#f1f8ee" stroke="#79a56d" stroke-width="2"/><text x="550" y="433">TDD</text>
+<rect x="525" y="495" width="330" height="88" rx="15" fill="#f1f8ee" stroke="#79a56d" stroke-width="2"/><text x="550" y="548">PR creation</text>
+</g>
+<g fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6 7" marker-end="url(#arrow)"><path d="M390 309H510"/><path d="M390 424H510"/><path d="M390 539H510"/></g>
+<text x="45" y="653" font-size="19" fill="#526072">Dotted lines: possible selection, depending on the host and available skills.</text>
+</g></svg>

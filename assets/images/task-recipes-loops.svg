@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="750" viewBox="0 0 900 750" role="img" aria-labelledby="title desc">
+<title id="title">Several loops around delivery</title>
+<desc id="desc">Requirements and documentation health checks can each produce tickets. A central delivery loop turns a ticket into a pull request. A potential risk-based merge loop follows. Requirements and merge handling are illustrative.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#475569" stroke-width="1.5"/></marker></defs>
+<rect width="900" height="750" rx="20" fill="#fffdf8"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="#1f2937">
+<text x="45" y="60" font-size="32" font-weight="700">One factory, several loops</text>
+<text x="45" y="95" font-size="19" fill="#526072">Different jobs can produce or consume the same durable work.</text>
+<g font-size="22" font-weight="700">
+<rect x="45" y="135" width="380" height="110" rx="18" fill="#f1f8ee" stroke="#79a56d" stroke-width="2"/><text x="70" y="178">Requirements</text><text x="70" y="211" font-size="18" font-weight="400">Product decisions → tickets</text>
+<rect x="475" y="135" width="380" height="110" rx="18" fill="#f1f8ee" stroke="#79a56d" stroke-width="2"/><text x="500" y="178">Documentation health</text><text x="500" y="211" font-size="18" font-weight="400">Verified drift → tickets</text>
+</g>
+<g fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"><path d="M235 245V283H450V312"/><path d="M665 245V283H450V312"/><path d="M450 458V498"/><path d="M450 613V650"/></g>
+<rect x="115" y="320" width="670" height="138" rx="20" fill="#e8f3ff" stroke="#4c8cc7" stroke-width="3"/>
+<text x="450" y="367" text-anchor="middle" font-size="25" font-weight="700">Delivery loop</text><text x="450" y="407" text-anchor="middle" font-size="22">Ticket → adaptive goal → PR</text>
+<rect x="190" y="505" width="520" height="108" rx="18" fill="#fff4df" stroke="#c69a4a" stroke-width="2"/><text x="450" y="550" text-anchor="middle" font-size="23" font-weight="700">Possible merge loop</text><text x="450" y="582" text-anchor="middle" font-size="18">Assess risk and decide what happens next</text>
+<text x="450" y="690" text-anchor="middle" font-size="19" fill="#526072">Each loop can run on its own trigger or schedule.</text>
+</g></svg>
